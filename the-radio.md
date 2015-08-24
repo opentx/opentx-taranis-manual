@@ -1,4 +1,6 @@
-# What you'll find in your package 
+# The Taranis radio
+
+## What you'll find in your package 
 
 ![](images/taranis-case.jpg)
 
@@ -9,12 +11,8 @@
 * A nice neck strap
 * Depending on the chosen combo, an X8R receiver
 
-
-# The radio
-
 The FrSky Taranis is a ground-breaking radio because it's the first time a renowned player in the R/C industry and the creators of an open-source radio control firmware collaborate closely to improve both the hardware and software sides of a product, and come up with an open-source radio targeting the mainstream market. This means that while the Taranis is a low cost radio, it is free of the usual "marketing-driven" limitations that most manufacturers place on their offerings, and as such offers features that match and even exceed those of the highest end radios in the industry.
 It is also future-proof, as both teams are always there to respond to questions and suggestions. Things can evolve quickly to follow the needs of the various users! And should you have some programming experience - the entire source code of the firmware is available for you to play with and change to your liking.
-
 
 ## An overview of the features
 
@@ -40,7 +38,6 @@ It is also future-proof, as both teams are always there to respond to questions 
 * Sticks can be calibrated by the end user
 * Multiple language support: English, French, Italian, German, Swedish, Spanish, Portuguese, Czech, and maybe yours if you contribute with your own translation file! (Radio comes in English language, reflashing is needed to change language)
 * Open source community-driven firmware, so unlike with major manufacturers if you need a special function or have good improvement suggestions just raise your voice, and don't be surprised if it's implemented a couple of days later! Visit http://www.openrcforums.com to meet the developers!
-
 
 ## The hardware
 
@@ -77,4 +74,3 @@ On the inside, the gimbals have 3 different types of screws:
 * X and Y spring tension (red), screw in for more tension, outer is Y of course.
 It is good to note that if you like having weak stick tension, it is easy to get inconsistent centering when the spring tension screws are too loose. Just tighten them enough for centering to be good enough, and recalibrate.
 Also, if you encounter a situation where your throttle stick does not “stay” at the ends when you release it, it is likely that that the spring disable screw (green) is simply not tightened all the way. Tightening it completely should solve your problem.
-
