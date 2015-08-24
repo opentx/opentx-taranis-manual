@@ -1,6 +1,6 @@
 # What you'll find in your package 
 
-![](taranis-case.jpg)
+![](images/taranis-case.jpg)
 
 * An aluminium case (optional on newer sets)
 * A radio!
@@ -17,8 +17,6 @@ It is also future-proof, as both teams are always there to respond to questions 
 
 
 ## An overview of the features
-
-
 
 * Large 212*64 backlit LCD screen
 * Quad ball-bearing gimbals with high quality potentiometers
@@ -46,7 +44,7 @@ It is also future-proof, as both teams are always there to respond to questions 
 
 ## The hardware
 
-![](Taranis.jpg)
+![](images/Taranis.jpg)
 
 The radio has a relatively standard design and control layout, namely:
 * 2 sticks and their associated trims, labelled in the software as Thr, Rud, Ele, Ail and TrmT, TrmR, TrmE, TrmA respectively. The stick to name mapping matches the selected stick mode. Trims are freely assignable (e.g. for cross-trimming), and can also be used as independent controls.
@@ -58,8 +56,8 @@ The radio has a relatively standard design and control layout, namely:
 When selecting a switch position to activate functions, it is referred to as the switch name followed by the physical position (SAup, SC-, SFdown). A ! before the name means NOT, so !SBdown would mean that the function is active when SB is NOT down, i.e. when SB is either up or in the middle.
 A swiveling antenna is installed for the internal RF module, and a speech-capable speaker is located under the round grill. The large backlit, grayscale LCD and 6 edit keys take most of the lower part.
 
-![](back-connectors.jpg)
-![](battery-bay-connectors.jpg)
+![](images/back-connectors.jpg)
+![](images/battery-bay-connectors.jpg)
 
 The back of the radio shows the JR-compatible module slot, along with a JR-style jack trainer port, USB connector and earphone jack. The battery bay houses a microSD card slot, a serial port and of course the battery connection.
 The supplied battery is a 6-cell NiMH, but the plug will also accept a JST-style balance plug for a 2s Li-Po battery. Battery compartment dimensions are 108x31x28mm. Voltage range is 5.5-13V for the internal components, but be aware that external modules might require up to 12V, so observe your module's requirements when using one and choose the appropriate battery.
@@ -71,7 +69,7 @@ The right side of the radio sports the charger input plug, with the charging LED
 
 The gimbals have adjustable length and tension, and each of the vertical axes is fitted with a spring disable feature as well as a ratchet and brake. This means that there is no need to swap parts to change modes, and that if you want to you can have either both or none of the vertical axes spring-loaded.
 
-![](stick-screws.png)
+![](images/stick-screws.png)
 
 On the inside, the gimbals have 3 different types of screws:
 * Y axis ratchet and/or "smooth braking" action strengths (blue)
