@@ -1,5 +1,5 @@
 # Summary
 
 * Introduction
-* Hardware
+* [Hardware](hardware.md)
 
