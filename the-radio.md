@@ -41,7 +41,7 @@ It is also future-proof, as both teams are always there to respond to questions 
 
 ## The hardware
 
-![](images/Taranis.jpg)
+![](images/taranis.jpg)
 
 The radio has a relatively standard design and control layout, namely:
 * 2 sticks and their associated trims, labelled in the software as Thr, Rud, Ele, Ail and TrmT, TrmR, TrmE, TrmA respectively. The stick to name mapping matches the selected stick mode. Trims are freely assignable (e.g. for cross-trimming), and can also be used as independent controls.
