@@ -1,4 +1,4 @@
-## Radio general settings
+## Radio menus
 
 A LONG press of the MENU key brings up the mostly self-explanatory radio setup menu:
 
