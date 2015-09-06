@@ -5,7 +5,7 @@
 * [Software overview](software-overview.md)
    * [Main views](main_views.md)
    * [Telemetry views](telemetry_views.md)
-   * [Radio setup](radio_setup.md)
+   * [Radio menus](radio_menus.md)
    * [Model menus](model_menus.md)
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
