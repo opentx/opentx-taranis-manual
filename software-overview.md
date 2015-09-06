@@ -46,7 +46,8 @@ A LONG press of the PAGE key from any of the main views brings up the telemetry 
 
 A LONG press of the MENU key brings up the mostly self-explanatory radio setup menu:
 
-![](images/menu-radio-setup.png)
+
+![](images/radio-setup.png)
 
 * Date/Time: To be set, they serve as info but also to give a correct timestamp to files and logs saved by the radio.
 * Battery range: range of the graphical radio battery meter on the main views. To be set accordingly with the battery type you use (2s lipo here).
@@ -69,7 +70,7 @@ A LONG press of the MENU key brings up the mostly self-explanatory radio setup m
 
 A SHORT press of the PAGE key brings up the SD card browser page:
 
-![](images/menu-radio-sd.png)
+![](images/radio-sd.png)
 
 This allows you to browse the SD card contents.
 On each file or folder, pressing ENTER will bring up a contextual menu with some basic file operations (copy/delete), as well as others depending on the file type.
@@ -86,7 +87,7 @@ The microSD card can be formatted by selecting the relevant option in the menu t
 
 A SHORT press of the PAGE key calls the trainer settings page:
 
-![](images/menu-radio-trainer.png)
+![](images/radio-trainer.png)
 
 This page allows you to configure the trainer function for "master" use (make sure the Trainer mode in model settings is set to Master). For each of the 4 main functions you will be able to set the mode (OFF, += for Add, := for Replace), ratio and input channel.
 Start by setting the mode for each function (the "standard" way is Replace i.e. when the trainer function is activated the function is fully transferred to the student, Add allows both master and student to act upon the function together). Then select the source channel accordingly to the brand/model of the student radio, and set the ratio to 100% for now. Now ensure the student radio is connected and recognised (moving the sticks of the student radio should change the 4 numbers at the bottom of the screen) make sure all its trims are neutral, all its sticks are centered (including throttle). Select the CAL field and press ENTER twice. The numbers should now be 0.0 or very close.
@@ -97,7 +98,7 @@ Trainer input is now configured. Note that this setting is global, because it de
 
 This screen allows you to see the version of your currently loaded OpenTX firmware.
 
-![](images/menu-radio-version.png)
+![](images/radio-version.png)
 
 When reporting a bug, please be sure to include the revision number you see on the SVN line.
 
@@ -106,21 +107,21 @@ When reporting a bug, please be sure to include the revision number you see on t
 The next 2 pages are the switch and analog diagnostics, they will show you what the firmware reads from the radio's keys and potentiometers. This is the first place to go to if you run into issues with badly responding sticks / pots / switches. If things are wrong here (inconsistent stick centering or end point readings, flickering value,...) then you can be sure the problem is hardware-related and not due to wrong model setup.
 The Analog page also features the battery calibration setting. It should be correct out of the box, but if not move the cursor to the field, and adjust it so that the displayed value matches the voltage you can measure on the battery terminals with a voltmeter.
 
-![](images/menu-radio-switches.png)
+![](images/radio-switches.png)
 
-![](images/menu-radio-analogs.png)
+![](images/radio-analogs.png)
 
 ### Calibration
 
 This is the place where you can calibrate sticks and pots. Follow the on-screen instructions, and note that when asked to center the sticks this includes the throttle stick and the 2 sliders. S1 and S2 pots however do not need to be centered, only the extremes are calibrated.
 
-![](images/menu-radio-calibration.png)
+![](images/radio-calibration.png)
 
 ## Model menus
 
 A SHORT press of the MENU key from the main views brings up the model selection screen. There models can be selected, deleted, backed up and restored to/form SD card using the menu brought up by a LONG press on the ENTER key. They can also be copied or moved (one SHORT press on ENTER key highlights the line, +/- create and place a copy of the model on the desired slot, while two SHORT presses create a dotted outline where +/- simply move the selected model to another slot.)
 
-![](images/menu-model-select.png)
+![](images/model-select.png)
 
 ### Model setup
 
@@ -145,7 +146,7 @@ Receiver no (D16 / LR12 only): defines the behavior of the receiver lock functio
 Bind and range check fields get activated by a press of the ENTER key. The radio will beep every few seconds to confirm. Range check will display a popup with the RSSI value to evaluate how reception quality is behaving.
 Failsafe mode (D16 / LR12 only): Allows choosing between simply holding the last received positions, turning off pulses (like old PPM MHz receivers), or moving the servos to custom predefined positions. For custom positions a SET field will call the failsafe settings page, where the position can be defined separately for each channel. Select the desired channel, press ENTER to get in edit mode, move the control to the desired position, and press ENTER to save. In D8 mode this field is hidden, failsafe needs to be set on the receiver as described in the receiver's manual.
 * External RF:
-Module type: PPM for generic modules, XJT (same operation modes as above), DSM for Spektrum “hack” modules made using these instructions. Note that the Orange DSM and Spektrum DM9 modules both need PPM.
+Module type: PPM for generic modules, XJT (same operation modes as above), DSM for Spektrum ï¿½hackï¿½ modules made using these instructions. Note that the Orange DSM and Spektrum DM9 modules both need PPM.
 Channel range: same as for internal module.
 Receiver no, Bind, Range check (when module type is XJT): Same as above.
 PPM Frame (when module type is PPM): Allows setting the frame length, pulse length, and polarity of the PPM frame. The frame length is automatically adjusted to a safe value when the number of transmitted channels is changed. Advanced users can still adjust it afterwards if necessary.
@@ -295,7 +296,7 @@ A long press of the ENTER key on a custom function's label will bring up a popup
 
 This page groups all the basic telemetry-related settings.
 
-A1 and A2 are the 2 analog ports available on D8R receivers. X8R receivers only have A1, which measures the receiver's power supply. Range sets the maximum measurable voltage, i.e. 3.3V / (divider ratio). For example with the receivers' internal sensor (1:4), this would be 13.2V. For the FBVS-01 sensor with the default ratio of 1:6, this would be 19.8V. The number next to "Ax channel" will show the currently measured value, and can be used to confirm or correct the Range setting by comparing the reading with an external voltmeter. Offset and custom units (A, m/s, m, °, %...) can be used in addition to help scaling the input to accomodate 3rd-party analog sensors.
+A1 and A2 are the 2 analog ports available on D8R receivers. X8R receivers only have A1, which measures the receiver's power supply. Range sets the maximum measurable voltage, i.e. 3.3V / (divider ratio). For example with the receivers' internal sensor (1:4), this would be 13.2V. For the FBVS-01 sensor with the default ratio of 1:6, this would be 19.8V. The number next to "Ax channel" will show the currently measured value, and can be used to confirm or correct the Range setting by comparing the reading with an external voltmeter. Offset and custom units (A, m/s, m, ï¿½, %...) can be used in addition to help scaling the input to accomodate 3rd-party analog sensors.
 "Low" and "Critical" alarms for A1, A2 and RSSI will trigger audio warnings when the measured value goes below the defined levels. When a microSD card with a Taranis voice pack loaded is present in the slot, those alarms will be announced in clear voice (e.g. "A1 Low", "A2 Critical", "RF signal Low"). If no card is present each will trigger a different beep pattern. We do recommend the use of the voice capability as 6 different beeps can be difficult to remember under stress.
 Blades: Number of blades for the RPM sensor.
 Voltage/current: Allows choosing the input for the power calculation and mAh count features. These should match the input you've connected the corresponding sensors to.
