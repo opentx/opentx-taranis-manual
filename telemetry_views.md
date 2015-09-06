@@ -1,0 +1,3 @@
+## Telemetry views
+
+A LONG press of the PAGE key from any of the main views brings up the telemetry views. The PAGE and +/- keys will then cycle between the power status screen (voltage, current, power or A1/A2 if not set, cell voltages from an FLVS-01 sensor if connected), the min/max and GPS coordinates screen, and if defined from one to three customs screens that can hold up to 12 items each, configured in the telemetry setup menu.
