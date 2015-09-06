@@ -15,11 +15,6 @@ In edit mode, we have four 2-key shortcuts available:
 * MENU/PAGE: Set value to 0
 Another handy feature is the auto selection of physical inputs in the relevant fields. Instead of choosing a source or switch with the + and - keys, just move the pot or flick the switch you want, and it will be recognised. For switches the position is also auto-selected, and the +/- double key combination will allow selecting the opposite position (!Sxy) in a pinch.
 
-
-## Telemetry view
-
-A LONG press of the PAGE key from any of the main views brings up the telemetry views. The PAGE and +/- keys will then cycle between the power status screen (voltage, current, power or A1/A2 if not set, cell voltages from an FLVS-01 sensor if connected), the min/max and GPS coordinates screen, and if defined from one to three customs screens that can hold up to 12 items each, configured in the telemetry setup menu.
-
 ## Radio general settings
 
 A LONG press of the MENU key brings up the mostly self-explanatory radio setup menu:
