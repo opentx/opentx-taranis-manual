@@ -66,7 +66,6 @@ The Analog page also features the battery calibration setting. It should be corr
 
 ![](images/radio-analogs.png)
 
-
 ### Hardware 
 
 ![](images/radio-hardware.png)
