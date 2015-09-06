@@ -46,7 +46,6 @@ A LONG press of the PAGE key from any of the main views brings up the telemetry 
 
 A LONG press of the MENU key brings up the mostly self-explanatory radio setup menu:
 
-
 ![](images/radio-setup.png)
 
 * Date/Time: To be set, they serve as info but also to give a correct timestamp to files and logs saved by the radio.
@@ -110,6 +109,11 @@ The Analog page also features the battery calibration setting. It should be corr
 ![](images/radio-switches.png)
 
 ![](images/radio-analogs.png)
+
+
+### Hardware 
+
+![](images/radio-hardware.png)
 
 ### Calibration
 
