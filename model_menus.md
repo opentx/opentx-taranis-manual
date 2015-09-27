@@ -29,7 +29,7 @@ Receiver no (D16 / LR12 only): defines the behavior of the receiver lock functio
 Bind and range check fields get activated by a press of the ENTER key. The radio will beep every few seconds to confirm. Range check will display a popup with the RSSI value to evaluate how reception quality is behaving.
 Failsafe mode (D16 / LR12 only): Allows choosing between simply holding the last received positions, turning off pulses (like old PPM MHz receivers), or moving the servos to custom predefined positions. For custom positions a SET field will call the failsafe settings page, where the position can be defined separately for each channel. Select the desired channel, press ENTER to get in edit mode, move the control to the desired position, and press ENTER to save. In D8 mode this field is hidden, failsafe needs to be set on the receiver as described in the receiver's manual.
 * External RF:
-Module type: PPM for generic modules, XJT (same operation modes as above), DSM for Spektrum �hack� modules made using these instructions. Note that the Orange DSM and Spektrum DM9 modules both need PPM.
+Module type: PPM for generic modules, XJT (same operation modes as above), DSM for Spektrum "hack" modules made using these instructions. Note that the Orange DSM and Spektrum DM9 modules both need PPM.
 Channel range: same as for internal module.
 Receiver no, Bind, Range check (when module type is XJT): Same as above.
 PPM Frame (when module type is PPM): Allows setting the frame length, pulse length, and polarity of the PPM frame. The frame length is automatically adjusted to a safe value when the number of transmitted channels is changed. Advanced users can still adjust it afterwards if necessary.
