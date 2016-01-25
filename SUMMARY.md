@@ -16,6 +16,7 @@
        * [Curves](curves.md)
        * [Global Variables](global_variables.md)
        * [Logical Switches](logical_switches.md)
+       * Special Functions
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
