@@ -1,6 +1,6 @@
 # Model Selection
 
-A SHORT press of the MENU key from the main views brings up the model selection screen.
+A SHORT press of the MENU key from the main view brings up the model selection screen.
 
 Navigation
 
@@ -13,6 +13,9 @@ Navigation
     * Delete model *(not active when model selected)
     * Create Model *(only active on an empty model slot)
     * Restore Model *(only active on an empty model slot)
- - SHORT ENTER - highlights the line where +/- create a copy of the model on the desired slot.
- - two SHORT ENTER - creates dotted line outline where +/- move the select model to another slot
 
+
+ - SHORT ENTER - highlights the line where +/- create a copy of the model in the desired slot.
+ - SHORT ENTER twice - creates dotted line outline where +/- moves the select model to another slot
+ - PAGE key enters into currently selected model menus
+ - LONG PAGE key brings you to Telemetry menu
