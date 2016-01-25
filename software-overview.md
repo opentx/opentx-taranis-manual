@@ -1,4 +1,8 @@
 # Software overview
 
-Now might be the time to put the battery on charge, so that after reading this section you can directly have a go at putting what you learned in practice!
+The following sections cover the Taranis operational menus.
+
+You may want to start charging your battery so you can put what you learn in these sections immediately to practice!
+
+
 
