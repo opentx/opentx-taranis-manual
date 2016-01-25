@@ -13,6 +13,7 @@
        * [Inputs](inputs.md)
        * [Mixer](mixer.md)
        * [Outputs](outputs.md)
+       * Curves
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
