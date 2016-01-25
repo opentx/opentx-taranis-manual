@@ -10,7 +10,7 @@
        * [Model Setup](model_setup.md)
        * [Inputs](inputs.md)
        * [Heli Setup](heli_setup.md)
-       * Flight Modes
+       * [Flight Modes](flight_modes.md)
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
