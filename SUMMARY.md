@@ -11,6 +11,7 @@
        * [Heli Setup](heli_setup.md)
        * [Flight Modes](flight_modes.md)
        * [Inputs](inputs.md)
+       * Mixer
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
