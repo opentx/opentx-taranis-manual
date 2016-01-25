@@ -18,7 +18,7 @@
        * [Logical Switches](logical_switches.md)
        * [Special Functions](special_functions.md)
        * [Custom Scripts](custom_scripts.md)
-       * Telemetry
+       * [Telemetry](telemetry.md)
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
