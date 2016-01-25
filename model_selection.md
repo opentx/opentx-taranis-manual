@@ -1,8 +1,12 @@
 # Model Selection
 
+A SHORT press of the MENU key from the main view brings up the model selection screen.
+
 ![](images/model selection.png)
 
-A SHORT press of the MENU key from the main view brings up the model selection screen.
+The asterisk (*) designates the selected model.
+
+The size in bytes is to the right of the model name.
 
 Navigation
 
