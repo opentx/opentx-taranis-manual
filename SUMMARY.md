@@ -9,7 +9,7 @@
    * [Model menus](model_menus.md)
        * [Inputs](inputs.md)
        * [Helicopter](helicopter.md)
-       * Model Setup
+       * [Model Setup](model_setup.md)
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
