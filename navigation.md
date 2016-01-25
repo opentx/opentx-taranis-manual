@@ -17,7 +17,7 @@ The Main View uses the 6 keys as follows:
 - ENTER: used for item selection
 - EXIT: used to back out of current context
 - MENU key:
-    * SHORT press - Model menu
+    * SHORT press - Model selection menu
     * LONG press - Radio menu
 - PAGE key: Move to next main view
 - PAGE key (LONG press): Telemetry views
