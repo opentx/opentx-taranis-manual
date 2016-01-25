@@ -8,6 +8,7 @@
    * [Radio menus](radio_menus.md)
    * [Model menus](model_menus.md)
        * [Inputs](inputs.md)
+       * Helicopter
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
