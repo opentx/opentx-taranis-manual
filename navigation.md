@@ -15,7 +15,7 @@ Moving indicated switch(es) to correct position will remove the warning. Also, p
 The Main View uses the 6 keys as follows: 
 - +/-: move "cursor" to next/previous field
 - ENTER: used for item selection
-- EXIT: used to back out of current context
+- EXIT: goes back to previous navigation level
 - MENU key:
     * SHORT press - Model selection menu
     * LONG press - Radio menu
