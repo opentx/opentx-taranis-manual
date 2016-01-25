@@ -8,7 +8,7 @@
    * [Radio menus](radio_menus.md)
    * [Model menus](model_menus.md)
        * [Inputs](inputs.md)
-       * [Helicopter](helicopter.md)
+       * [Heli Setup](helicopter.md)
        * [Model Setup](model_setup.md)
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
