@@ -10,6 +10,7 @@
        * [Model Setup](model_setup.md)
        * [Heli Setup](helicopter.md)
        * [Inputs](inputs.md)
+       * Flight Modes
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
