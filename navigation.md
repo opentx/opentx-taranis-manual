@@ -4,7 +4,7 @@
 
 ![](images/throttle-warning.png)
 
-When the radio is initially turned on and the throttle is not at idle, you will receive this warning.  Moving the throttle to idle or pressing one fo +/-/ENT/MENU/PAGE/EXIT will remove the warning.
+When the radio is initially turned on and the throttle is not at idle, you will receive this warning.  Moving the throttle to idle or pressing one of +/-/ENT/MENU/PAGE/EXIT will remove the warning.
 
 ![](images/control-warning.png)
 
