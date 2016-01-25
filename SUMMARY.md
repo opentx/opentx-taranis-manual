@@ -12,6 +12,7 @@
        * [Flight Modes](flight_modes.md)
        * [Inputs](inputs.md)
        * [Mixer](mixer.md)
+       * Outputs
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
