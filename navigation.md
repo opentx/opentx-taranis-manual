@@ -1,9 +1,16 @@
 # Navigation
-![](images/Menu-buttons.png)
 
 ##Power up
 
-When the radio is initially turned on 
+![](images/throttle-warning.png)
+
+When the radio is initially turned on and the throttle is not at idle, you will receive this warning.  Moving the throttle to idle or pressing one fo +/-/ENT/MENU/PAGE/EXIT will remove the warning.
+
+![](images/control-warning.png)
+
+Moving indicated switch(es) to correct position will remove the warning. Also, pressing one of +/-/ENT/MENU/PAGE/EXIT will remove the warning.
+
+![](images/Menu-buttons.png)
 
 The Taranis has 6 input keys: 
 - +/-: 
