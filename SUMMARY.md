@@ -6,6 +6,7 @@
    * [Main views](main_views.md)
    * [Telemetry views](telemetry_views.md)
    * [Radio menus](radio_menus.md)
+   * [Model Setup](model_setup.md)
    * [Model menus](model_menus.md)
        * [Inputs](inputs.md)
        * [Heli Setup](helicopter.md)
