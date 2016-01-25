@@ -14,6 +14,7 @@
        * [Mixer](mixer.md)
        * [Outputs](outputs.md)
        * [Curves](curves.md)
+       * Global Variables
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
 * [Companion introduction](companion-introduction.md)
