@@ -1,5 +1,7 @@
 # Model Selection
 
+![](images/model selection.png)
+
 A SHORT press of the MENU key from the main view brings up the model selection screen.
 
 Navigation
