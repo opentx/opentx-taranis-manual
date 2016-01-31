@@ -2,7 +2,7 @@
 
 Navigation keys
 
-A SHORT press of the PAGE key from the [model menu](./Model menus.md) brings up the basic model setup page:
+A SHORT press of the PAGE key from the [model menu](./model_menus.md) brings up the basic model setup page:
 
 
 
