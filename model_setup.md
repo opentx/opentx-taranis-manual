@@ -2,15 +2,35 @@
 
 Navigation keys
 
-A SHORT press of the PAGE key from the [model menu](./model_menus.md) brings up the basic model setup page:
+* A SHORT press of the PAGE key from the [model menu](./model_menus.md) brings up the basic model setup page
+* +/- keys go to next or previous entry
+* ENTER key starts editing field
+
+While editing a field:
+* ENTER SHORT - move to next character or finalize edit
+* ENTER LONG - capitalize/lowercase current letter before moving to next
 
 
 
 ![](images/model-setup.png)
 
-* Model name: Self-explanatory... Change letter with +/- keys, go to the next with ENTER SHORT, or press ENTER LONG to capitalize the current letter before switching to the next.
+* Model name: Put the name of your model here.
 * Model image: There you can select a 64x32px, 16-grayscale .bmp file located in the BMP folder of the SD card as your model logo. To be able to preview the images in the folder, use the SD Browser.
-* Timers: There are up to 3 fully programmable timers, that can count either up or down. If the value is set to 00:00 they will count up from 0, if not they will count down from the preset value. The trigger is set using the field next to the timer value, ABS counts up all the time, THs runs whenever the throttle stick isn't at idle, THt starts the timer the first time throttle is advanced, TH% counts up as a percentage of the full stick range. Persistent, if ticked, means the value is stored in memory when the radio is powered off or model is changed, and will be reloaded next time the model is used. Minute call will beep / say the time every full minute, while countdown will also give announcements several more times during the last minute.
+
+**Timers** 
+
+There are up to 3 fully programmable timers, that can count either up or down.
+
+* Timer
+    * ON - always counting
+    * Tht - starts the time the first time the throttle is advanced
+    * THs - runs whenever the throttle stick isn't at idle 
+    * TH% - counts up as a percentage of the full stick range. 
+    * value - when set to 0:00 will count up from 0, if not they will count down from preset value
+* Timer Name: Name displayed on Main screen for this timer, Timer 3 does not display
+* Timer Persistent - if ticked, means the value is stored in memory when the radio is powered off or model is changed and will be reloaded the next time the model is used.
+* Timer Minute Call: - will beep/say the time every full minute
+* Timer Countdown - will give announcements serveral times during the last minute
 * Extended limits allow setting servo movement limits up to 125% instead of 100%.
 * Extended trims allows trims to cover the full stick range instead of +/-25%. Be careful when using this option, as holding the trim tabs for too long might trim so much as to render your model unflyable. The "Reset" item will reset all trims (for all flight modes).
 * Trim step sets the precision of trim clicks. Exponential means very fine steps close to the trim center, but larger ones the farther you get from center.
