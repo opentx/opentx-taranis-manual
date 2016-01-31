@@ -24,3 +24,9 @@ A proportional control, or a channel with for example specified curve/weight/off
 Another GVAR
 +1/-1, to increment/decrement the GVAR with each activation.
 A long press of the ENTER key on a custom function's label will bring up a popup menu that allows you to copy/paste/delete an entry for more convenient entry of similar settings.
+* Haptic: When active, changing the value vibrates the radio in the following patterns
+    - 0 = 30ms vibe, 10ms pause, 10ms vibe
+    - 1 = 30ms vibe, 10ms pause, 10ms vibe, 40ms pause, 10ms vibe
+    - 2 = 30ms vibe, 10ms pause, 10ms vibe, 30ms pause, 10ms vibe, 30ms pause, 10ms vibe
+    - 3 = 30ms vibe, 10ms pause, 10ms vibe, 20ms pause, 10ms vibe, 20ms pause, 10ms vibe, 20ms pause, 10ms vibe
+
