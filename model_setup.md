@@ -1,6 +1,10 @@
 # Model Setup
 
-A SHORT press of the PAGE key brings up the basic model setup page:
+Navigation keys
+
+A SHORT press of the PAGE key from the [model menu](./Model menus.md) brings up the basic model setup page:
+
+
 
 ![](images/model-setup.png)
 
