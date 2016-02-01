@@ -91,47 +91,204 @@ You can leave the other parameters at their default settings, which mean:
 * There is no slowing down, so the line's output reacts instantly to input changes. Times set here are expressed in seconds to cover the entire range (-100 to +100). If 2 seconds are selected, the line's output will take 0.5 second to gradually sweep from 0 to +50% if the input was moved by that much or the mixer line was activated/deactivated by a switch.
 * You can also name the mixer line. This name is shown on the main mixer screen, so setting names is a good idea to help maintain complex setups where you might have many lines on each channel.
 
-Note that at any time in the Mixer screen and the EDIT/INSERT MIX dialogs you can press MENU LONG to bring up the channel monitor. This makes it easy to try the different parameters and see their effect on the channel's output. In addition to this, you will see that on the mixer screen each active line has its name and source displayed in bold, so it's always clear at any given time as to which lines are actively contributing to the channel output.
-The description is long, but in practice if we now do it again to control CH2 with the elevator stick it will only take a couple of seconds to select CH2, press ENTER LONG, scroll to Source, press ENTER, move the Elevator stick, and press EXIT twice. Setting up the mixer for a vast number of basic models is as simple as that. In addition to the 4 basic channels, if you have a model with flaps that have their own servo and that you want to control with switch SB you'll just find a free channel to connect your servo to (let's say CH6), you'll scroll to CH6 on the mixer screen, insert a mixer line, flip the SB switch when in edit mode on the source field, and EXIT twice. If you want to adjust the up/mid/full positions, a good idea would be to set up a 3-point custom curve. In the Curve setting, select c1, exit edit mode, and still on the curve field press MENU. You will be brought to the curve editor. Select "3pt" as type, select the Y value of the first point, and adjust its position. Do the same for the other 2 points, and exit.
-Now something more "complicated", if your model has retracts that you want to control with switch SA (which has 3 positions) but want only 2 possible output values (in and out) this won't work (choosing SA would give -100%, 0%, +100%). You'll then use the very convenient MAX source, that represents a fixed value. Create a mixer line on a channel (e.g. CH5) with MAX as source and +100% weight, you could name it "Gear Up". Now create a 2nd mixer line under the first one by pressing ENTER LONG on on it and selecting "Insert After". Choose MAX again as source, then set weight to -100%, for which it's time to remember the handy shortcut - enter edit mode, and press the + and - keys together. There, -100%. Scroll to the "Multpx" setting, and select "Replace". Now go to the switch setting, enter edit mode, flip SA in the UP position (flick it out of it first if it's already there), and press the + and - keys together. This will turn the "SAup" entry into "!SAup". This means the line is active whenever SA is NOT in the UP position. Name the line as "Gear Down" and you're done. What happens is: CH5 will be at 100% by default (the first mixer line is in effect), BUT when SA is either in the middle or in the down position the 2nd line will activate and replace the first one, turning the output to -100%. If you go back to the mixer screen and play with SA you'll see that when it's not in the UP position the 2nd line will turn bold as it becomes active, while the first one fades back to normal as it's been deactivated by the Replace type of the second line. Again that seems long, but takes as much as about 30 seconds when you're used to it.
-Of course if you've followed you'll certainly understood that we could have set the second line to use switch "SAup", and that subsequently the role of the 2 lines would be swapped (second active when switch is up, first in the other 2 positions). But then I wouldn't have had the opportunity to explain the !, and also as a personal preference I like my switch default positions to be UP, and the first mixer line on a channel to be the default value.
-A little simple one next: You have 2 ailerons with separate servos. Using a Y-cable to link them is too old-school nowadays, so let's use another channel. We already have the first aileron on CH1, CH5 and 6 are taken by gear and flaps, so let's use CH7. We have an aileron that must move with the aileron stick, which is actually just like the first one. So let's just copy the first mixer by highlighting it and pressing ENTER LONG, and selecting copy. Move it to CH7 and press ENTER. This would work just fine, but I'll throw in a personal preference again, and change its weight to -100% because "logically" that aileron is supposed to move in the opposite direction. We'll see later why this makes sense.
-Next up: a little mix. I'm going to be lazy and just tell you to go back up and check the mixer screen description a bit further up for the throttle -> elevator compensation. I'm sure it will seem much more clear now!
+Note that at any time in the Mixer screen and the EDIT/INSERT MIX dialogs you can press MENU LONG to bring up the channel monitor. This makes it easy to try the different parameters and see their effect on the channel's output. 
+
+In addition to this, you will see that on the mixer screen each active line has its name and source displayed in bold, so it's always clear at any given time as to which lines are actively contributing to the channel output.
+
+The description is long, but in practice if we now do it again to control CH2 with the elevator stick it will only take a couple of seconds to select CH2, press ENTER LONG, scroll to Source, press ENTER, move the Elevator stick, and press EXIT twice. 
+
+Setting up the mixer for a vast number of basic models is as simple as that. In addition to the 4 basic channels, if you have a model with flaps that have their own servo and that you want to control with switch SB you'll just find a free channel to connect your servo to (let's say CH6), you'll scroll to CH6 on the mixer screen, insert a mixer line, flip the SB switch when in edit mode on the source field, and EXIT twice. 
+
+If you want to adjust the up/mid/full positions, a good idea would be to set up a 3-point custom curve. 
+
+In the Curve setting, select c1, exit edit mode, and still on the curve field press MENU. You will be brought to the curve editor. Select "3pt" as type, select the Y value of the first point, and adjust its position. 
+
+Do the same for the other 2 points, and exit.
+
+Now something more "complicated". 
+
+If your model has retracts that you want to control with switch SA (which has 3 positions) but want only 2 possible output values (in and out) this won't work (choosing SA would give -100%, 0%, +100%). You'll then use the very convenient MAX source, that represents a fixed value. 
+
+Create a mixer line on a channel (e.g. CH5) with MAX as source and +100% weight, you could name it "Gear Up". 
+
+Now create a 2nd mixer line under the first one by pressing ENTER LONG on on it and selecting "Insert After". Choose MAX again as source, then set weight to -100%, for which it's time to remember the handy shortcut - enter edit mode, and press the + and - keys together. 
+
+There, -100%. 
+
+Scroll to the "Multpx" setting, and select "Replace". 
+
+Now go to the switch setting, enter edit mode, flip SA in the UP position (flick it out of it first if it's already there), and press the + and - keys together. This will turn the "SAup" entry into "!SAup". 
+
+This means the line is active whenever SA is NOT in the UP position. Name the line as "Gear Down" and you're done. What happens is: CH5 will be at 100% by default (the first mixer line is in effect), BUT when SA is either in the middle or in the down position the 2nd line will activate and replace the first one, turning the output to -100%. 
+
+If you go back to the mixer screen and play with SA you'll see that when it's not in the UP position the 2nd line will turn bold as it becomes active, while the first one fades back to normal as it's been deactivated by the Replace type of the second line
+
+Again that seems long, but takes as much as about 30 seconds when you're used to it.
+
+Of course if you've followed you'll certainly understood that we could have set the second line to use switch "SAup", and that subsequently the role of the 2 lines would be swapped (second active when switch is up, first in the other 2 positions). 
+
+But then I wouldn't have had the opportunity to explain the !, and also as a personal preference I like my switch default positions to be UP, and the first mixer line on a channel to be the default value.
+
+A little simple one next: You have 2 ailerons with separate servos. Using a Y-cable to link them is too old-school nowadays, so let's use another channel. 
+
+We already have the first aileron on CH1, CH5 and 6 are taken by gear and flaps, so let's use CH7. 
+
+We have an aileron that must move with the aileron stick, which is actually just like the first one. 
+
+So let's just copy the first mixer by highlighting it and pressing ENTER LONG, and selecting copy. 
+
+Move it to CH7 and press ENTER. 
+
+This would work just fine, but I'll throw in a personal preference again, and change its weight to -100% because "logically" that aileron is supposed to move in the opposite direction. 
+
+We'll see later why this makes sense.
+
+Next up: a little mix. 
+
+I'm going to be lazy and just tell you to go back up and check the mixer screen description a bit further up for the throttle -> elevator compensation. 
+
+I'm sure it will seem much more clear now!
+
 Let's do a delta mix. Again, what kind of control surfaces do we have, and what do we want them to do?
+
 We have 2 elevons. They must move in the same direction when the elevator stick is moved, but they must move in opposite directions when the aileron stick is moved.
+
 So, let's pick 2 channels to connect our servos to. CH3 and 7, because... why not. Trying to make you forget about old school fixed channel assignments here ;)
-CH3 must move with the elevator stick, so we create a mixer line with Ele as source on it. CH3 must also move with the aileron stick, so we create a 2nd mixer line with Ail as source. We leave multiplexing set to "Add", as that's exactly what we want to do - the 2 inputs must be added together.
-Now let's discuss the weights a little. They are now set to 100%. This means that a full deflection of the aileron stick will create a full deflection of CH3, same for the elevator stick. But now as we add the 2 together, if we put the stick in the upper right corner (assuming mode 2) we have 100% + 100% = 200% output on CH3. Now, the limits defined on the SERVOS screen are set to 100% - which means that the output will be clipped. When the mixer's output for a channel goes beyond 100%, the servo won't move any further. This is not different from other radios - predefined delta mixes will usually give you ratios to enter for elevator and aileron authority, which is just the same. If you enter too high ratios some of the stick throw will be ineffective.
+
+CH3 must move with the elevator stick, so we create a mixer line with Ele as source on it. 
+
+CH3 must also move with the aileron stick, so we create a 2nd mixer line with Ail as source. We leave multiplexing set to "Add", as that's exactly what we want to do - the 2 inputs must be added together.
+
+Now let's discuss the weights a little. They are now set to 100%. This means that a full deflection of the aileron stick will create a full deflection of CH3, same for the elevator stick. But now as we add the 2 together, if we put the stick in the upper right corner (assuming mode 2) we have 100% + 100% = 200% output on CH3. 
+Now, the limits defined on the OUTPUS screen are set to 100% - which means that the output will be clipped. 
+
+When the mixer's output for a channel goes beyond 100%, the servo won't move any further. 
+
+This is not different from other radios - predefined delta mixes will usually give you ratios to enter for elevator and aileron authority, which is just the same. If you enter too high ratios some of the stick throw will be ineffective.
+
 Now the discussion as to what to set the ratios to is probably endless - some are happy with 100% and clipping, some will like 50% so that there is never any clipping, and some like myself will like something a bit in the middle - I use 70%.
-So, let's say we now have 2 mixer lines on CH3, 70% Ail and 70% Ele. As we said, CH7 must respond the same way to the elevator input, so we add a 70% Ele mixer too. It must respond to the aileron stick by the same amount, but in the opposite direction, so we'll set... -70%.
-This is the reason for which I set -100% in the previous dual aileron example. Forcing yourself to enforce that logic thinking even when not really necessary will help you to get it right when it's needed. For example in the dual aileron scenario we could have set both ailerons to 100%, then used servo reverse to invert one aileron to achieve the same result on the model. BUT in the delta scenario this wouldn't work.
 
-## Servos screen
+So, let's say we now have 2 mixer lines on CH3, 70% Ail and 70% Ele. 
 
-Now that the mixer is configured and the controls' behaviors are defined, the next step is to set up the way these orders will be carried through to the servos. At this point you'll want to actually connect your servos to your receiver, remove the control horns from the servos, the props from the motors (safety first), and connect a receiver battery. Bind the receiver if not done yet.
-Center all controls (you can look at the channel monitor and aim for 0), and for each servo start by mounting the horns so that they're as close to perpendicular to the control linkage they're going to drive as possible. Murphy's law ensures that it's always right between 2 of the steps, so use the PPM center adjustment to make them perfectly perpendicular. Using this setting instead of subtrim avoids losing throw, and makes sure the outputs seen in the channel monitor are real "control" inputs. Connect your linkages so that the control surfaces are at neutral (or middle of their expected throw for things such as flaps).
-Now move the radio's controls carefully to exercise the servos but being aware of possible mechanical binding. Set servo reverse where needed. Adjust the linkages in order to have a little more throw than what you'll ever need in both directions. If there is a little binding on one side to reach the appropriate side on the other and/or the throws are not symmetrical it's not a problem.
-Then adjust the min and max limits. These should be set so that:
-You have a little bit more throw than what you'll ever need
-There is no mechanical binding
-Throws are the same on both sides with full control input deflection
+As we said, CH7 must respond the same way to the elevator input, so we add a 70% Ele mixer too. 
+
+It must respond to the aileron stick by the same amount, but in the opposite direction, so we'll set... -70%.
+
+This is the reason for which I set -100% in the previous dual aileron example. Forcing yourself to enforce that logic thinking even when not really necessary will help you to get it right when it's needed. 
+
+For example in the dual aileron scenario we could have set both ailerons to 100%, then used servo reverse to invert one aileron to achieve the same result on the model. BUT in the delta scenario this wouldn't work.
+
+## OUTPUTS screen
+
+Now that the mixer is configured and the controls' behaviors are defined, the next step is to set up the way these orders will be carried through to the servos. 
+
+At this point you'll want to actually connect your servos to your receiver, remove the control horns from the servos, the props from the motors (safety first), and connect a receiver battery. 
+
+Bind the receiver if not done yet.
+
+Center all controls (you can look at the channel monitor and aim for 0), and for each servo start by mounting the horns so that they're as close to perpendicular to the control linkage they're going to drive as possible. 
+
+Murphy's law ensures that it's always right between 2 of the steps, so use the PPM center adjustment to make them perfectly perpendicular. 
+
+Using this setting instead of subtrim avoids losing throw, and makes sure the outputs seen in the channel monitor are real "control" inputs. 
+
+Connect your linkages so that the control surfaces are at neutral (or middle of their expected throw for things such as flaps).
+
+Now move the radio's controls carefully to exercise the servos but being aware of possible mechanical binding. 
+
+Set servo reverse where needed. 
+
+Adjust the linkages in order to have a little more throw than what you'll ever need in both directions. 
+
+If there is a little binding on one side to reach the appropriate side on the other and/or the throws are not symmetrical it's not a problem.
+
+Adjust min and max limits so that:
+* You have a little bit more throw than what you'll ever need
+* There is no mechanical binding
+* Throws are the same on both sides with full control input deflection
+
 We're done for this screen. You've already named your channels of course ;)
 
 ## Inputs screen
 
 You've probably noticed there's one thing we haven't done yet - adjust throws. That's what we'll do now.
-For each stick, create a rate line. Set the weight to achieve the desired throws. Add expo if desired. This is your default rate, so don't choose a switch.
-If you want multiple rates, create a new line before the default one, enter the new rate/expo, choose a switch. Repeat as many times as desired. What's important to know is that the first line that has its switch on (starting from the top) will be the active one. So if you create rates below one with no switch - it will never be active. Think about the priority if you choose switch combinations that can lead to 2 rates having their switch on - the top one will override the other. Ideally you should choose your switches so that never happens.
-There, we can go and fly!
-Model setup guidelines
 
-Time for a little summary. As we've seen, there's literally an infinite number of ways to do the same thing in the firmware, so let's mention a few good practices when setting up models. If you stick to them they will help you set up your model quicker, keep your setup clean, and understand what you did 6 months later. With a simple 4-channel model where each servo is controlled by only one control input, if you want to reduce aileron throw you could do it either with the aileron D/R, in the weight of the mixer line linking the Aileron stick to the aileron channel, and with the Limits for that channel. For such a simple model it won't matter much where you do it, but as soon as you'll get to more complicated models with flaperons, butterfly mixes etc, doing it in the limits for example would simply make it impossible to set up the model properly.
-Start with the mixer setup. As we did above, think about what controls you have on your model and what they should do, and choose which receiver channel you want to use for each of them. On each of those channels, create one mixer line for each of the transmitter controls that should act on it. Figure out the relative amount of movement each of those must lead to, based on 100%. Forget about throws for now, if one control must have half the authority of the other set one to 100% and one to 50%. Keep the mixer dedicated ONLY to the "logical" part of the setup. If for example for complex gliders you have more than one control surface that needs to receive the same group of mixers, isolate those as a "Function" on a free "virtual" channel you know you won't use it for a servo, e.g. CH10. Then reference it in the required output channels with a 100% CH10 mixer line. This will save mixer lines and add to clarity. Name your channels and mixes that aren't self-explanatory.
-Set the servo parameters. Take good care of the mechanical setup, the better it is the easier the radio setup and the more precise your controls will be. If you need to use subtrim to artificially shift a control (for example in case of flaperons that need a far greater throw on the low side than on the high side), remember to use the "=" output mode to keep symmetry.
-Always define control throws using the OUTPUTS screen.
-Now the throws are adjusted, the mixer is set for good logic and the outputs are set for good mechanical fit. As every part of the setup is clearly separated, should you need to change something any adjustment will only require intervention on one of the screens. If you crash or change something mechanically, it will be the SERVOS screen. If your throws are too big, OUTPUTS screen. If a compensation amount or mixing ratio is wrong, mixer screen.
+For each stick, create a rate line. 
+
+Set the weight to achieve the desired throws. Add expo if desired. This is your default rate, so don't choose a switch.
+
+If you want multiple rates, create a new line before the default one, enter the new rate/expo, choose a switch. 
+
+Repeat as many times as desired. 
+
+What's important to know is that the first line that has its switch on (starting from the top) will be the active one. 
+
+So if you create rates below one with no switch - it will never be active. 
+
+Think about the priority if you choose switch combinations that can lead to 2 rates having their switch on - the top one will override the other. 
+
+Ideally you should choose your switches so that never happens.
+
+There, we can go and fly!
+
+##Model setup guidelines
+
+Time for a little summary. 
+
+As we've seen, there's literally an infinite number of ways to do the same thing in the firmware, so let's mention a few good practices when setting up models. 
+
+If you stick to them they will help you set up your model quicker, keep your setup clean, and understand what you did 6 months later. 
+With a simple 4-channel model where each servo is controlled by only one control input, if you want to reduce aileron throw you could do it either with the aileron D/R, in the weight of the mixer line linking the Aileron stick to the aileron channel, and with the Limits for that channel. 
+
+For such a simple model it won't matter much where you do it, but as soon as you'll get to more complicated models with flaperons, butterfly mixes etc, doing it in the limits for example would simply make it impossible to set up the model properly.
+
+Start with the mixer setup. 
+
+As we did above, think about what controls you have on your model and what they should do, and choose which receiver channel you want to use for each of them. 
+
+On each of those channels, create one mixer line for each of the transmitter controls that should act on it. 
+
+Figure out the relative amount of movement each of those must lead to, based on 100%. 
+
+Forget about throws for now, if one control must have half the authority of the other set one to 100% and one to 50%. 
+
+Keep the mixer dedicated ONLY to the "logical" part of the setup. 
+
+If for example for complex gliders you have more than one control surface that needs to receive the same group of mixers, isolate those as a "Function" on a free "virtual" channel you know you won't use it for a servo, e.g. CH10. 
+
+Then reference it in the required output channels with a 100% CH10 mixer line. 
+
+This will save mixer lines and add to clarity. 
+
+Name your channels and mixes that aren't self-explanatory.
+
+Set the servo parameters. 
+
+Take good care of the mechanical setup, the better it is the easier the radio setup and the more precise your controls will be. If you need to use subtrim to artificially shift a control (for example in case of flaperons that need a far greater throw on the low side than on the high side), remember to use the "=" output mode to keep symmetry.
+
+Always define control throws using the INPUTS screen.
+
+Now the throws are adjusted, the mixer is set for good logic and the outputs are set for good mechanical fit. 
+
+As every part of the setup is clearly separated, should you need to change something any adjustment will only require intervention on one of the screens. 
+
+If you crash or change something mechanically, it will be the OUTPUTS screen. 
+
+If your throws are too big, OUTPUTS screen. 
+
+If a compensation amount or mixing ratio is wrong, mixer screen.
+
 Remember that there are custom switches that can be set to combine various functions, for example allow activation of some mixers only if another one is active, etc.
-It is also good practice to make use of the "Safety CHx" custom function to define a safety switch for the throttle channel of electric models. Select your throttle lock switch, select the correct function for your throttle channel, set the value to -100, then tick the box. While you should always set up your model without it being powered, or at least without a prop mounted, the safety box is there to OU forcing the channel to the default value of 0 (mid throttle) while browsing the function list if your switch is active.
-The "Instant Trim" custom function can be used if you expect your model could be badly out of trim on the first flight, see the Custom Functions section for a full description.
-Once the flight is over, the "Trims -> Offsets" function at the bottom of the SERVOS page can be used to transfer the trim contents into the subtrim settings. Be aware that unless the servo mode is set to "=" an excessive subtrim amount can lead to dissymmetric throws and influences settings like differential.
+
+It is also good practice to make use of the "Safety CHx" custom function to define a safety switch for the throttle channel of electric models. 
+
+Select your throttle lock switch, select the correct function for your throttle channel, set the value to -100, then tick the box. 
+
+While you should always set up your model without it being powered, or at least without a prop mounted, the safety box is there to OU forcing the channel to the default value of 0 (mid throttle) while browsing the function list if your switch is active.
+
+The "Instant Trim" custom function can be used if you expect your model could be badly out of trim on the first flight, see the [Special Functions](special_functions.md) section for a full description.
+
+Once the flight is over, the "Trims -> Subtrims" function at the bottom of the OUTPUS page can be used to transfer the trim contents into the subtrim settings. 
+
+Be aware that unless the servo mode is set to "=" an excessive subtrim amount can lead to dissymmetric throws and influences settings like differential.
 
