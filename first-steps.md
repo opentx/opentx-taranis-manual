@@ -1,23 +1,87 @@
 # First steps. Setting up a model
 
-Now that you've seen the basics and that your battery has some charge, what about a little bit of practice? The radio comes from the factory with the sticks already calibrated, so the first thing to do with your radio would be to configure the general settings.
+Now that you've seen the basics and that your battery has some charge, what about a little bit of practice?
 
-Get to the relevant page with MENU LONG, set time, date, sound volumes to your preference (the lower end of the volume slider is typically needed when using headphones, while the upper end is good for using with the internal speaker), play with the backlight setting, set the RF country code to your location, the default channel order to your preference, and the stick mode to match your flying style. Battery gauge and alarm are factory set for the supplied battery.
-The radio will have created an empty model for you, so after having gone back to the main view you'll be able to go to the model setup screen by pressing MENU SHORT and PAGE SHORT. There you'll want to make sure you've set the RF mode that matches the receiver you want to use. When using the internal module, to bind your receiver select the "Bind" field and press the ENTER key. The radio will beep every few seconds. Now follow your receiver's instructions for binding (press and hold the F/S button then apply power for D and X receivers, connect jumper to S pins of channels 1 and 2 and apply power for V8x-II receivers). The receiver LED will flash fast to confirm binding. Press exit on the radio, Remove the jumper on the receiver if applicable, and cycle receiver power. You should now have servo control of channels 1-4 with the sticks.
+The radio comes from the factory with the sticks already calibrated, so the first thing to do with your radio is to configure the general settings.
+
+From the main view go to the  [Radio Menu](radio_menus.md) (MENU LONG) and set the time, date, sound volumes to your preference (the lower end of the volume slider is typically needed when using headphones, while the upper end is good for using with the internal speaker). 
+
+You may also want to play with the backlight setting, set the RF country code to your location, the default channel order to your preference, and the stick mode to match your flying style.
+
+Battery gauge and alarm are factory set for the supplied battery.
+
+##Binding
+
+The radio will have created an empty model for you, so after having gone back to the main view you'll be able to go to the [Model Setup](model_setup.md) (MENU SHORT then PAGE SHORT). 
+
+Set the RF mode to match the receiver you want to use. 
+
+###Internal module
+
+When using the internal module to bind your receiver select the "Bind" field and press the ENTER key. 
+
+The radio will beep every few seconds. 
+
+Now follow your receiver's instructions for binding (press and hold the F/S button then apply power for D and X receivers, connect jumper to S pins of channels 1 and 2 and apply power for V8x-II receivers). 
+
+The receiver LED will flash fast to confirm binding. 
+
+Press exit on the radio, Remove the jumper on the receiver if applicable, and cycle receiver power. 
+
+You should now have servo control of channels 1-4 with the sticks.
+
+###External module
+
+Ensure you have turned off the internal module and select the correct mode RF for your module.
+
+For XJT and DSM module follow binding instructions for internal module.
+
+For PPM follow instructions provided by the module manufacturer.
 
 ## OpenTX basics
 
-Now that everything works, it's time to stop a moment for some theory about the basic operation of the OpenTX firmware.
-As briefly described above, OpenTX differs from the majority of mainstream radios by its programming philosophy. Owners of Multiplex radios will however feel at home very quickly, as the principles are very similar. As opposed to common radios that offer a choice between a limited set of predefined usage scenarios (airplane, glider, helicopter), a number of functions that are commonly used with such models (delta, flaperon, camber, butterfly...), and have fixed assignations (sticks always control their respective channels), OpenTX offers a blank canvas on which you will build your setup: the mixer screen. This approach ensures maximum flexibility because whatever you do you will never have to work around what the radio expects you to do, which is a blessing for anybody having to work with "new" model types or configurations which still "don't exist" for mainstream radio manufacturers, and as such for which the built-in functions are usually useless. So you can see it that way: For some model types, usual predefined functions can allow setting up a model in seconds (just enable a function), but for others you'll spend hours trying to get around their limitations. On OpenTX everybody is more or less at the same level - it might take a little longer at the beginning to set up a seemingly simple model, but a complicated one won't take much more. As there is no existing function you can just turn on, it will require basic understanding of how your model is supposed to work, and what you want each control surface to do. This means that you might even learn something about your model in the process of setting it up!
-The control order path starts from the hardware controls, goes through the STICKS screen (anything affecting control response like dual rates and exponential), continues to the mixer, and ends up being adapted to the mechanical characteristics of the model in the SERVOS screen.
+Now that everything works, it's time to stop a moment for some theory about the basic eration of the OpenTX firmware.
+
+As briefly described above, OpenTX differs from the majority of mainstream radios by its programming philosophy. Owners of Multiplex radios will however feel at home very quickly, as the principles are very similar. 
+
+Most commercial transmitters offer a choice between a limited set of predefined usage scenarios (airplane, glider, helicopter), a number of functions that are commonly used with such models (delta, flaperon, camber, butterfly...), and have fixed assignations (sticks always control their respective channels).
+
+OpenTX offers a blank canvas on which you will build your setup: the [mixer screen](mixer.md). 
+
+This approach ensures maximum flexibility because whatever you do you will never have to work around what the radio expects you to do, which is a blessing for anybody having to work with "new" model types or configurations which still "don't exist" for mainstream radio manufacturers, and as such for which the built-in functions are usually useless. 
+
+So you can see it that way: For some model types, usual predefined functions can allow setting up a model in seconds (just enable a function), but for others you'll spend hours trying to get around their limitations. 
+
+On OpenTX everybody is more or less at the same level - it might take a little longer at the beginning to set up a seemingly simple model, but a complicated one won't take much more. 
+
+As there is no existing function you can just turn on, it will require basic understanding of how your model is supposed to work, and what you want each control surface to do. 
+
+This means that you might even learn something about your model in the process of setting it up!
+
+The control order path starts from the hardware controls, goes through the [INPUTS](inputs.md) screen (anything affecting control response like dual rates and exponential), continues to the [Mixer](mixer.md), and ends up being adapted to the mechanical characteristics of the model in the [OUTPUTS](outputs.md) screen.
 
 ## Everything about the mixer screen
 
-We'll start with this as it is the center of the radio. The mixer screen lists the 32 output channels to which you can link one or more inputs from a long list of physical controls (sticks, pots, trims, switches), logic sources, other channels and trainer inputs. Each assignation is done with a mixer line. A new model will have 4 predefined mixer lines on channels 1,2,3 and 4 that link the 4 sticks to them according to the channel order preference you have set. These are there purely for convenience, and can of course be edited or deleted.
-Let's delete them all by highlighting them, pressing ENTER LONG and choosing "Delete". Your mixer screen is now empty, which means the radio does nothing at all. Well it does, it sends out the number of channels that are defined on the model setup page to the receiver (channels 1-8 by default), but as those channels are empty in the mixer screen no servo will respond, they'll all be centered. You won't go very far with that, so you'll want to add control inputs to those channels. You'll create a mixer line on CH1 by highlighting it and pressing ENTER LONG, and will end up in the INSERT MIX page. Scroll to the "Source" field, press ENTER, and select the control you want to act on CH1. You can do it by browsing the list with the + and - keys, or take the easy route and just move the desired control (if it's a physical one, of course). Move the aileron stick, and the field will change to Ail (it might have already been there if your channel order preference set in the general settings had A for the first channel, as that's taken into account). You can leave the other parameters at their default settings, which mean:
+We'll start with this as it is the center of the radio. 
+
+The mixer screen lists the 32 output channels to which you can link one or more inputs from a long list of physical controls (sticks, pots, trims, switches), logic sources, other channels and trainer inputs. 
+
+Each assignation is done with a mixer line. A new model will have 4 predefined mixer lines on channels 1,2,3 and 4 that link the 4 sticks to them according to the channel order preference you have set. These are there purely for convenience, and can of course be edited or deleted.
+
+Let's delete them all by highlighting them, pressing ENTER LONG and choosing "Delete". Your mixer screen is now empty, which means the radio does nothing at all. 
+
+Well it does, it sends out the number of channels that are defined on the model setup page to the receiver (channels 1-8 by default), but as those channels are empty in the mixer screen no servo will respond, they'll all be centered. 
+
+You won't go very far with that, so you'll want to add control inputs to those channels. You'll create a mixer line on CH1 by highlighting it and pressing ENTER LONG, and will end up in the INSERT MIX page. 
+
+Scroll to the "Source" field, press ENTER, and select the control you want to act on CH1. You can do it by browsing the list with the + and - keys, or take the easy route and just move the desired control (if it's a physical one, of course). 
+
+Move the aileron stick, and the field will change to Ail (it might have already been there if your channel order preference set in the general settings had A for the first channel, as that's taken into account). 
+
+You can leave the other parameters at their default settings, which mean:
 * The mix ratio of this input is 100%, so the scaling of the mixer line's output will be equal to its input. A value of -50% would mean the output would be half of the input, and inverted.
 * There is no offset, so with an input of 0 the output of the mixer line will also be 0. A value here would shift the response by that much percentage of (input x weight).
-* Trim is ON, it could instead be excluded from the calculation (OFF), or one of the other trims could be used (for cross-trimming for example). D/R and expo (the entries on the STICKS screen for that channel) are used. Unticking the box would mean the mix receives the raw stick input even if a D/R is active.
+* Trim is ON, it could instead be excluded from the calculation (OFF), or one of the other trims could be used (for cross-trimming for example). D/R and expo (the entries on the OUTPUTS screen for that channel) are used. Unticking the box would mean the mix receives the raw stick input even if a D/R is active.
 * Differential is 0, so the mixer output will be symmetrical on both sides. A value of 20% would mean the line's output would be 20% less on the negative side than on the positive one. The "Diff" field is editable, and by using the +/- keys on it you'll be able to select a curve instead (predefined or custom).
 * The mixer line is active for all flight modes. By "unticking" some of the numbers, you would disable that line whenever the corresponding flight mode is selected.
 * No switch is assigned to the line, so it's always active (as long as the modes setting above allows it). Selecting a switch (physical or logical) would allow activating or deactivating the line when needed.
@@ -64,10 +128,10 @@ Model setup guidelines
 Time for a little summary. As we've seen, there's literally an infinite number of ways to do the same thing in the firmware, so let's mention a few good practices when setting up models. If you stick to them they will help you set up your model quicker, keep your setup clean, and understand what you did 6 months later. With a simple 4-channel model where each servo is controlled by only one control input, if you want to reduce aileron throw you could do it either with the aileron D/R, in the weight of the mixer line linking the Aileron stick to the aileron channel, and with the Limits for that channel. For such a simple model it won't matter much where you do it, but as soon as you'll get to more complicated models with flaperons, butterfly mixes etc, doing it in the limits for example would simply make it impossible to set up the model properly.
 Start with the mixer setup. As we did above, think about what controls you have on your model and what they should do, and choose which receiver channel you want to use for each of them. On each of those channels, create one mixer line for each of the transmitter controls that should act on it. Figure out the relative amount of movement each of those must lead to, based on 100%. Forget about throws for now, if one control must have half the authority of the other set one to 100% and one to 50%. Keep the mixer dedicated ONLY to the "logical" part of the setup. If for example for complex gliders you have more than one control surface that needs to receive the same group of mixers, isolate those as a "Function" on a free "virtual" channel you know you won't use it for a servo, e.g. CH10. Then reference it in the required output channels with a 100% CH10 mixer line. This will save mixer lines and add to clarity. Name your channels and mixes that aren't self-explanatory.
 Set the servo parameters. Take good care of the mechanical setup, the better it is the easier the radio setup and the more precise your controls will be. If you need to use subtrim to artificially shift a control (for example in case of flaperons that need a far greater throw on the low side than on the high side), remember to use the "=" output mode to keep symmetry.
-Always define control throws using the Sticks screen.
-Now the throws are adjusted, the mixer is set for good logic and the outputs are set for good mechanical fit. As every part of the setup is clearly separated, should you need to change something any adjustment will only require intervention on one of the screens. If you crash or change something mechanically, it will be the SERVOS screen. If your throws are too big, Sticks screen. If a compensation amount or mixing ratio is wrong, mixer screen.
+Always define control throws using the OUTPUTS screen.
+Now the throws are adjusted, the mixer is set for good logic and the outputs are set for good mechanical fit. As every part of the setup is clearly separated, should you need to change something any adjustment will only require intervention on one of the screens. If you crash or change something mechanically, it will be the SERVOS screen. If your throws are too big, OUTPUTS screen. If a compensation amount or mixing ratio is wrong, mixer screen.
 Remember that there are custom switches that can be set to combine various functions, for example allow activation of some mixers only if another one is active, etc.
-It is also good practice to make use of the "Safety CHx" custom function to define a safety switch for the throttle channel of electric models. Select your throttle lock switch, select the correct function for your throttle channel, set the value to -100, then tick the box. While you should always set up your model without it being powered, or at least without a prop mounted, the safety box is there to avoid forcing the channel to the default value of 0 (mid throttle) while browsing the function list if your switch is active.
+It is also good practice to make use of the "Safety CHx" custom function to define a safety switch for the throttle channel of electric models. Select your throttle lock switch, select the correct function for your throttle channel, set the value to -100, then tick the box. While you should always set up your model without it being powered, or at least without a prop mounted, the safety box is there to OU forcing the channel to the default value of 0 (mid throttle) while browsing the function list if your switch is active.
 The "Instant Trim" custom function can be used if you expect your model could be badly out of trim on the first flight, see the Custom Functions section for a full description.
 Once the flight is over, the "Trims -> Offsets" function at the bottom of the SERVOS page can be used to transfer the trim contents into the subtrim settings. Be aware that unless the servo mode is set to "=" an excessive subtrim amount can lead to dissymmetric throws and influences settings like differential.
 
