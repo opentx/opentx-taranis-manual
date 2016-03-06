@@ -95,7 +95,7 @@ When the driver is properly installed, you should see this in the device manager
 
 ### Installing the flashing utility (for Mac OS and Linux)
 
-Download and install the dfu-util package for Mac OS X, or the 32-bit / 64-bit package for Ubuntu 12.04 and later.
+Download and install the dfu-util package for Mac OS X, or the 32-bit / 64-bit package for Ubuntu 12.04 and later from the "Other Downloads" section of [this page](http://www.open-tx.org/downloads).
 
 ### Downloading and flashing the firmware
 
