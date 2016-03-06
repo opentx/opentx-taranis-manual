@@ -79,11 +79,10 @@ The first thing to do is to power your radio off and connect it to your computer
 This is only required the first time you flash your radio on a given computer. If already done you can skip this section.
 * Download the Zadig utility for your operating system from its homepage: http://zadig.akeo.ie/
 * Run it as Administrator (Right-click and select the relevant entry).
-* In the big dropdown, you should find an entry named "STM32 BOOTLOADER". Select it, and click the "Install Driver" button.
+* In the big dropdown, you should find an entry named either "STM32 BOOTLOADER" or "STM Device in DFU mode". Select it, and click the "Install Driver" button.
+* If you do not have one of those entries, choose Options -> List All Devices, and it should now appear in the list. Select it, and click the "Replace Driver" button. DO NOT do it for anything else than those 2 possibilities. If you see "FrSky Taranis Bootloader" you have connected your radio with power on instead of power off, and overwriting the driver with Zadig would render the SD card and models/settings inaccessible.
 
 ![](images/companion-zadig-1.png)
-
-* If you do not have that entry, choose Options -> List All Devices, and it should now appear in the list. Select that entry, and click the "Replace Driver" button.
 
 ![](images/companion-zadig-2.png)
 
@@ -100,7 +99,7 @@ Download and install the dfu-util package for Mac OS X, or the 32-bit / 64-bit p
 
 ### Downloading and flashing the firmware
 
-In OpenTX companion's preferences window, make sure the proper firmware is selected (OpenTX for FrSky Taranis), and the language / options match your preference, then click the top Download button and select a location for the file. This will automatically build and download the latest available version of OpenTX for Taranis.
+In OpenTX companion's preferences window, make sure the proper firmware is selected (OpenTX for FrSky Taranis, or OpenTX for Taranis Plus according to the hardware you have), and the language / options match your preference, then click the top Download button and select a location for the file. This will automatically build and download the latest available version of OpenTX for Taranis.
 Close the Preferences window, and select the Burn -> Write Flash memory command. Make sure your radio is powered off and connected.
 Browse for the file you just downloaded. It will be recognised automatically and the version will be displayed.
 If you wish to replace the radio's splash screen, you can either load one from a file or select it from the available library, and click the "Substitute image in firmware" box.
