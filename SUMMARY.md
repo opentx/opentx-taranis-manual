@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * Contributors
 * [The radio](the-radio.md)
 * [Software overview](software-overview.md)
    * [Navigation](navigation.md)
