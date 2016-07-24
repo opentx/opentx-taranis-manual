@@ -12,5 +12,7 @@
 ##Documentation
 | Name | Last Contributed|
 | -- | -- |
-| Mike Barsalou | 07-23-2016 |
+| Mike Barsalou | July 23rd, 2016 |
+| Andre Bernet  | August 24th, 2015 |
+
 
