@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-   * Contributors
 * [The radio](the-radio.md)
+* Contributors
 * [Software overview](software-overview.md)
    * [Navigation](navigation.md)
    * [Model Selection](model_selection.md)
