@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [The radio](the-radio.md)
-* Contributors
 * [Software overview](software-overview.md)
    * [Navigation](navigation.md)
    * [Model Selection](model_selection.md)
@@ -24,5 +23,6 @@
        * [Telemetry](telemetry.md)
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
+* Contributors
 * [Companion introduction](companion-introduction.md)
 
