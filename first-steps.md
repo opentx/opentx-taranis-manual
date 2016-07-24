@@ -4,7 +4,7 @@ Now that you've seen the basics and that your battery has some charge, what abou
 
 The radio comes from the factory with the sticks already calibrated, so the first thing to do with your radio is to configure the general settings.
 
-From the main view go to the  [Radio Menu](radio_menus.md) (MENU LONG) and set the time, date, sound volumes to your preference (the lower end of the volume slider is typically needed when using headphones, while the upper end is good for using with the internal speaker). 
+From the main view go to the [Radio Menu](radio_menus.md) (MENU LONG) and set the time, date, sound volumes to your preference (the lower end of the volume slider is typically needed when using headphones, while the upper end is good for using with the internal speaker). 
 
 You may also want to play with the backlight setting, set the RF country code to your location, the default channel order to your preference, and the stick mode to match your flying style.
 
@@ -40,7 +40,7 @@ For PPM follow instructions provided by the module manufacturer.
 
 ## OpenTX basics
 
-Now that everything works, it's time to stop a moment for some theory about the basic eration of the OpenTX firmware.
+Now that everything works, it's time to stop a moment for some theory about the basic usage of the OpenTX firmware.
 
 As briefly described above, OpenTX differs from the majority of mainstream radios by its programming philosophy. Owners of Multiplex radios will however feel at home very quickly, as the principles are very similar. 
 
@@ -48,7 +48,7 @@ Most commercial transmitters offer a choice between a limited set of predefined 
 
 OpenTX offers a blank canvas on which you will build your setup: the [mixer screen](mixer.md). 
 
-This approach ensures maximum flexibility because whatever you do you will never have to work around what the radio expects you to do, which is a blessing for anybody having to work with "new" model types or configurations which still "don't exist" for mainstream radio manufacturers, and as such for which the built-in functions are usually useless. 
+This approach ensures maximum flexibility because whatever you do, you will never have to work around what the radio expects you to do, which is a blessing for anybody having to work with "new" model types or configurations which still "don't exist" for mainstream radio manufacturers, and as such for which the built-in functions are usually useless. 
 
 So you can see it that way: For some model types, usual predefined functions can allow setting up a model in seconds (just enable a function), but for others you'll spend hours trying to get around their limitations. 
 
@@ -56,7 +56,7 @@ On OpenTX everybody is more or less at the same level - it might take a little l
 
 As there is no existing function you can just turn on, it will require basic understanding of how your model is supposed to work, and what you want each control surface to do. 
 
-This means that you might even learn something about your model in the process of setting it up!
+This means that you might even learn something about your model while setting it up!
 
 The control order path starts from the hardware controls, goes through the [INPUTS](inputs.md) screen (anything affecting control response like dual rates and exponential), continues to the [Mixer](mixer.md), and ends up being adapted to the mechanical characteristics of the model in the [OUTPUTS](outputs.md) screen.
 
