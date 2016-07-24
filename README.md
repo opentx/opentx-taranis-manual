@@ -1,5 +1,5 @@
 # Introduction
 
-Manual by Andre Bernet, based on OpenTX 2.1.2, last updated 15.08.24. Commercial use forbidden without explicit authorization of the authors and translators. We don't bite, but like to know what's going on, so just ask :)
+Manual by Andre Bernet, based on OpenTX 2.1.2, last updated 15.08.24. Other contributors listed here: [Contributors](contributors.md)  Commercial use forbidden without explicit authorization of the authors and translators. We don't bite, but like to know what's going on, so just ask :)
 So as everybody probably knows now, FrSky have chosen OpenTX as the operating system for their new Taranis radio :)
 This page is intended to describe the OpenTX firmware installed on the Taranis, and offer some explanations about the philosophy of the firmware and how to set up models. We'll start with an overview of menu contents, and then go into more details about how to set up models. The Taranis version of OpenTX has all of the features from the 9X version, includes the additions of the sky9x version (audio/speech, SD card for model/audio files/logs storage, USB access to card and settings/model memory), sees the UI adapted to the larger screen and different button layout, and finally adds support for the Taranis' extra hardware capabilities.
