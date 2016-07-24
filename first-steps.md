@@ -54,7 +54,7 @@ So you can see it that way: For some model types, usual predefined functions can
 
 On OpenTX everybody is more or less at the same level - it might take a little longer at the beginning to set up a seemingly simple model, but a complicated one won't take much more. 
 
-As there is no existing function you can just turn on, it will require basic understanding of how your model is supposed to work, and what you want each control surface to do. 
+Since there is no existing function you can just turn on, it will require basic understanding of how your model is supposed to work, and what you want each control surface to do. 
 
 This means that you might even learn something about your model while setting it up!
 
@@ -66,13 +66,13 @@ We'll start with this as it is the center of the radio.
 
 The mixer screen lists the 32 output channels to which you can link one or more inputs from a long list of physical controls (sticks, pots, trims, switches), logic sources, other channels and trainer inputs. 
 
-Each assignation is done with a mixer line. A new model will have 4 predefined mixer lines on channels 1,2,3 and 4 that link the 4 sticks to them according to the channel order preference you have set. These are there purely for convenience, and can of course be edited or deleted.
+Each assignment is done with a mixer line. A new model will have 4 predefined mixer lines on channels 1,2,3 and 4 that link to the 4 sticks according to the channel order preference you have set. These are there purely for convenience, and can of course be edited or deleted.
 
 Let's delete them all by highlighting them, pressing ENTER LONG and choosing "Delete". Your mixer screen is now empty, which means the radio does nothing at all. 
 
-Well it does, it sends out the number of channels that are defined on the model setup page to the receiver (channels 1-8 by default), but as those channels are empty in the mixer screen no servo will respond, they'll all be centered. 
+Well the radio does do something. The radio sends out the number of channels that are defined on the model setup page to the receiver (channels 1-8 by default), but as those channels are empty in the mixer screen no servo will respond, they'll all be centered. 
 
-You won't go very far with that, so you'll want to add control inputs to those channels. You'll create a mixer line on CH1 by highlighting it and pressing ENTER LONG, and will end up in the INSERT MIX page. 
+You won't go very far with that, so you'll want to add control inputs to those channels. You'll create a mixer line on CH1 by highlighting it and pressing ENTER LONG, and will end up in the EDIT MIX page. 
 
 Scroll to the "Source" field, press ENTER, and select the control you want to act on CH1. You can do it by browsing the list with the + and - keys, or take the easy route and just move the desired control (if it's a physical one, of course). 
 
@@ -97,7 +97,11 @@ In addition to this, you will see that on the mixer screen each active line has 
 
 The description is long, but in practice if we now do it again to control CH2 with the elevator stick it will only take a couple of seconds to select CH2, press ENTER LONG, scroll to Source, press ENTER, move the Elevator stick, and press EXIT twice. 
 
-Setting up the mixer for a vast number of basic models is as simple as that. In addition to the 4 basic channels, if you have a model with flaps that have their own servo and that you want to control with switch SB you'll just find a free channel to connect your servo to (let's say CH6), you'll scroll to CH6 on the mixer screen, insert a mixer line, flip the SB switch when in edit mode on the source field, and EXIT twice. 
+Setting up the mixer for a vast number of basic models is as simple as that. 
+
+In addition to the 4 basic channels, let's say that you want to configure a model with flaps.  Assuming the flaps are on their own servo and you want to control it with switch SB, just find a free channel to connect your servo to (let's say CH6).
+
+Scroll to CH6 on the mixer screen, insert a mixer line, flip the SB switch when in edit mode on the source field, and EXIT twice. 
 
 If you want to adjust the up/mid/full positions, a good idea would be to set up a 3-point custom curve. 
 
@@ -105,13 +109,17 @@ In the Curve setting, select c1, exit edit mode, and still on the curve field pr
 
 Do the same for the other 2 points, and exit.
 
+###Retracts example
+
 Now something more "complicated". 
 
-If your model has retracts that you want to control with switch SA (which has 3 positions) but want only 2 possible output values (in and out) this won't work (choosing SA would give -100%, 0%, +100%). You'll then use the very convenient MAX source, that represents a fixed value. 
+As an example, if your model has retracts, it only needs two postions, Gear UP and Gear DOWN.  Most switches have three positions that provide -100%, 0%, and +100%, respectively.
+
+You can change this three position behavior by using the very convenient MAX source, that represents a fixed value. 
 
 Create a mixer line on a channel (e.g. CH5) with MAX as source and +100% weight, you could name it "Gear Up". 
 
-Now create a 2nd mixer line under the first one by pressing ENTER LONG on on it and selecting "Insert After". Choose MAX again as source, then set weight to -100%, for which it's time to remember the handy shortcut - enter edit mode, and press the + and - keys together. 
+Now create a 2nd mixer line under the first one by pressing ENTER LONG on it and selecting "Insert After". Choose MAX again as source.  By default the val for the weight defaults to 100.  Since we want this to be -100, we can use a handy shortcut - Highlight the weight number, press ENT to enter edit mode, and then press the + and - keys together. 
 
 There, -100%. 
 
@@ -129,6 +137,7 @@ Of course if you've followed you'll certainly understood that we could have set 
 
 But then I wouldn't have had the opportunity to explain the !, and also as a personal preference I like my switch default positions to be UP, and the first mixer line on a channel to be the default value.
 
+###Dual Airleron Example
 A little simple one next: You have 2 ailerons with separate servos. Using a Y-cable to link them is too old-school nowadays, so let's use another channel. 
 
 We already have the first aileron on CH1, CH5 and 6 are taken by gear and flaps, so let's use CH7. 
@@ -143,15 +152,15 @@ This would work just fine, but I'll throw in a personal preference again, and ch
 
 We'll see later why this makes sense.
 
-Next up: a little mix. 
+### Delta mix example
 
-I'm going to be lazy and just tell you to go back up and check the mixer screen description a bit further up for the throttle -> elevator compensation. 
+Let's do a delta mix. 
 
-I'm sure it will seem much more clear now!
+As always, ask yourself, what kind of control surfaces do we have, and what do we want them to do?
 
-Let's do a delta mix. Again, what kind of control surfaces do we have, and what do we want them to do?
+We have 2 elevons.
 
-We have 2 elevons. They must move in the same direction when the elevator stick is moved, but they must move in opposite directions when the aileron stick is moved.
+They must move in the same direction when the elevator stick is moved, but they must move in opposite directions when the aileron stick is moved.
 
 So, let's pick 2 channels to connect our servos to. CH3 and 7, because... why not. Trying to make you forget about old school fixed channel assignments here ;)
 
@@ -209,7 +218,7 @@ Adjust min and max limits so that:
 
 We're done for this screen. You've already named your channels of course ;)
 
-## Inputs screen
+## Inputs screen (Dual Rates/Expo)
 
 You've probably noticed there's one thing we haven't done yet - adjust throws. That's what we'll do now.
 
