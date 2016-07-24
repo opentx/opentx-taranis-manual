@@ -23,6 +23,6 @@
        * [Telemetry](telemetry.md)
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
-* Contributors
 * [Companion introduction](companion-introduction.md)
+* Contributors
 
