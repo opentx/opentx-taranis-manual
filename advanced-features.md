@@ -1,10 +1,10 @@
-# Advanced features
+#Advanced features
 
-## Flight modes
+##Flight modes
 
-Flight modes in OpenTX are relatively simple compared to most radios. The settings are simple: A name (displayed on the main views), a switch to activate them, a trim setting and 2 fade in/out settings. Yet they are very powerful, because the main settings are actually just located somewhere else: in the D/Rs and mixers. Each of these has a flight mode selection list, that will determine in which one(s) they are active. So (nearly) everything is done through dedicated mixers. The mixers that are controlled by a flight mode will see their activation fade in/out according to the mode's settings. As the trims can be made flight-mode specific (they are by default), using flight modes to activate things like gear or flaps allows using the separate set of trims to counter the extra drag that often causes an effect on pitch.
+Flight modes in OpenTX are relatively simple compared to most radios. The settings are simple: A name (displayed on the main views), a switch to activate them, a trim setting and 2 fade in/out settings. Yet they are very powerful, because the main settings are actually just located somewhere else: in the D/Rs and mixers. Each of these has a flight mode selection list, that will determine in which one(s) they are active.  Most everything is done through dedicated mixers. The mixers that are controlled by a flight mode will see their activation fade in/out according to the mode's settings.  As the trims can be made flight-mode specific (they are by default), using flight modes to activate things like gear or flaps allows using the separate set of trims to counter the extra drag that often causes an effect on pitch.
 
-## Telemetry values
+##Telemetry values
 
 The following will assume your radio is loaded with a microSD card and a valid voice pack, which should be the case as it is supplied with the radio. Probably the most important telemetry value is RSSI, which is an indication of how much signal the receiver in the model is seeing from the radio, and will warn you in advance if you are at risk of losing control be it due to external interference, excessive distance, badly oriented or damaged antennas etc. The telemetry settings page gives you 2 alarm levels you can set that will be announced in clear voice ("RF signal low" and "RF signal critical"). They are set by default to levels that have been considered suitable and safe for normal line of sight flight (45 and 42), but if you want to adjust them yourself the following explanations will be useful.
 
@@ -50,7 +50,7 @@ Similarly, if you are relying on information from an onboard voltage or current 
 
 So be aware of the "Telemetry lost" audio alert and act accordingly, whether by falling back to other sources of info or by turning back to land and investigate the reason for the loss of telemetry feed.
 
-Note that when the radio and receiver are very close to each other (usually <1m) you may get spurious "telemetry lost" and "telemetry recovered" alarms. 
+Note that when the radio and receiver are very close to each other (usually less than a meter) you may get spurious "telemetry lost" and "telemetry recovered" alarms. 
 
 This is not a malfunction and will stop when the 2 devices are separated.
 
@@ -64,11 +64,25 @@ It can then be played back in OpenTX companion or opened in spreadsheet programs
 
 ## Audio
 
-One of the major features of the radio is the speech output function. Provided a microSD card (FAT12/16/32 format) loaded with the sound pack available for download from within OpenTX companion is inserted in the slot in the battery compartment, the radio will be able to play audio files in response to various events like reaching trim center/ends and activation of a switch (physical or custom), to play a background music file, and last but not least to announce every available value (telemetry, parameter, stick position) in clear voice. Custom sounds can be placed in the SOUNDS/(selected_language) folder of the card and will be available for use (name must be 8 characters at most, not counting the .wav extension, and with no special characters). Language is set in the radio general settings and can be changed on the fly as long as the pack for that language is loaded on the card.
-ZIP files with the standard voice packs can be downloaded from within OpenTX companion, or here. Extract the ZIP file to the root of the SD card, and it will create the necessary subdirectories (e.g. SOUNDS/en for the English pack). If you wish to create your own files, the required format is:
+One of the major features of the radio is the speech output function.
+
+Provided a microSD card (FAT12/16/32 format) loaded with the sound pack available for download from within OpenTX companion is inserted in the slot in the battery compartment, the radio will be able to play audio files in response to various events.
+
+The events like reaching trim center/ends and activation of a switch (physical or custom), to play a background music file, and last but not least to announce every available value (telemetry, parameter, stick position) in clear voice.
+
+Custom sounds can be placed in the SOUNDS/(selected_language) folder of the card and will be available for use (name must be 8 characters at most, not counting the .wav extension, and with no special characters).
+
+Language is set in the radio general settings and can be changed on the fly as long as the pack for that language is loaded on the card.
+
+ZIP files with the standard voice packs can be downloaded from within OpenTX companion.
+
+Extract the ZIP file to the root of the SD card, and it will create the necessary subdirectories (e.g. SOUNDS/en for the English pack). 
+
+If you wish to create your own files, the required format is:
 WAV, 8 or 16 bit, Mono
 8, 16 or 32kHz sample rate
 PCM, u-law or a-law compression
+
 The stock sounds above use the best available quality, i.e. 16bit, 32kHz and PCM.
 Audio operation is relatively simple as it only consists of 5 "and a half" Custom Functions:
 Play Track: Just play an audio file from the SD card when the associated switch is active. A repeat option is available, when set the sound will repeat at the set interval as long as the switch is active. This can be used to announce flight modes, gear position, flap position etc when the associated switch is activated or on request.
