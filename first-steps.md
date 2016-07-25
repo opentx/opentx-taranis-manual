@@ -44,7 +44,7 @@ Now that everything works, it's time to stop a moment for some theory about the 
 
 As briefly described above, OpenTX differs from the majority of mainstream radios by its programming philosophy. Owners of Multiplex radios will however feel at home very quickly, as the principles are very similar. 
 
-Most commercial transmitters offer a choice between a limited set of predefined usage scenarios (airplane, glider, helicopter), a number of functions that are commonly used with such models (delta, flaperon, camber, butterfly...), and have fixed assignations (sticks always control their respective channels).
+Most commercial transmitters offer a choice between a limited set of predefined usage scenarios (airplane, glider, helicopter), a number of functions that are commonly used with such models (delta, flaperon, camber, butterfly...), and have fixed assignments sticks always control their respective channels).
 
 OpenTX offers a blank canvas on which you will build your setup: the [mixer screen](mixer.md). 
 
@@ -62,11 +62,11 @@ The control order path starts from the hardware controls, goes through the [INPU
 
 ## Everything about the mixer screen
 
-We'll start with this as it is the center of the radio. 
+We'll start with the mixer as it is the center of the radio. 
 
 The mixer screen lists the 32 output channels to which you can link one or more inputs from a long list of physical controls (sticks, pots, trims, switches), logic sources, other channels and trainer inputs. 
 
-Each assignment is done with a mixer line. A new model will have 4 predefined mixer lines on channels 1,2,3 and 4 that link to the 4 sticks according to the channel order preference you have set. These are there purely for convenience, and can of course be edited or deleted.
+Each assignment is implemented with a mixer line. A new model will have 4 predefined mixer lines on channels 1,2,3 and 4 that link to the 4 sticks according to the channel order preference you have set. These are there purely for convenience, and can of course be edited or deleted.
 
 Let's delete them all by highlighting them, pressing ENTER LONG and choosing "Delete". Your mixer screen is now empty, which means the radio does nothing at all. 
 
@@ -78,13 +78,13 @@ Scroll to the "Source" field, press ENTER, and select the control you want to ac
 
 Move the aileron stick, and the field will change to Ail (it might have already been there if your channel order preference set in the general settings had A for the first channel, as that's taken into account). 
 
-You can leave the other parameters at their default settings, which mean:
-* The mix ratio of this input is 100%, so the scaling of the mixer line's output will be equal to its input. A value of -50% would mean the output would be half of the input, and inverted.
+You can leave the other parameters at their default settings, which means:
+* The mix ratio of this input is 100%, so the scaling of the mixer line's output will be equal to its input. A value of -50% would mean the output would be half of the input and inverted.
 * There is no offset, so with an input of 0 the output of the mixer line will also be 0. A value here would shift the response by that much percentage of (input x weight).
 * Trim is ON, it could instead be excluded from the calculation (OFF), or one of the other trims could be used (for cross-trimming for example). D/R and expo (the entries on the OUTPUTS screen for that channel) are used. Unticking the box would mean the mix receives the raw stick input even if a D/R is active.
 * Differential is 0, so the mixer output will be symmetrical on both sides. A value of 20% would mean the line's output would be 20% less on the negative side than on the positive one. The "Diff" field is editable, and by using the +/- keys on it you'll be able to select a curve instead (predefined or custom).
 * The mixer line is active for all flight modes. By "unticking" some of the numbers, you would disable that line whenever the corresponding flight mode is selected.
-* No switch is assigned to the line, so it's always active (as long as the modes setting above allows it). Selecting a switch (physical or logical) would allow activating or deactivating the line when needed.
+* No switch is assigned to the line, so it's always active (as long as the flight modes setting above allows it). Selecting a switch (physical or logical) would allow activating or deactivating the line when needed.
 * Warning is off. If set to 1,2 or 3 the radio would emit 1,2 or 3 short beeps every few seconds to let you know that line is active.
 * Multiplex is Add, so this line is just added to the previous ones on the same channel. If set to multiply it would multiply the calculated result of the lines above it, and if set to replace it would replace anything that's above it whenever it's active.
 * Delays are 0, so if that line had a switch assigned it would be activated/deactivated instantly when the switch is toggled. Time is in seconds.
@@ -98,6 +98,8 @@ In addition to this, you will see that on the mixer screen each active line has 
 The description is long, but in practice if we now do it again to control CH2 with the elevator stick it will only take a couple of seconds to select CH2, press ENTER LONG, scroll to Source, press ENTER, move the Elevator stick, and press EXIT twice. 
 
 Setting up the mixer for a vast number of basic models is as simple as that. 
+
+###Flaps example
 
 In addition to the 4 basic channels, let's say that you want to configure a model with flaps.  Assuming the flaps are on their own servo and you want to control it with switch SB, just find a free channel to connect your servo to (let's say CH6).
 
@@ -127,13 +129,13 @@ Scroll to the "Multpx" setting, and select "Replace".
 
 Now go to the switch setting, enter edit mode, flip SA in the UP position (flick it out of it first if it's already there), and press the + and - keys together. This will turn the "SAup" entry into "!SAup". 
 
-This means the line is active whenever SA is NOT in the UP position. Name the line as "Gear Down" and you're done. What happens is: CH5 will be at 100% by default (the first mixer line is in effect), BUT when SA is either in the middle or in the down position the 2nd line will activate and replace the first one, turning the output to -100%. 
+This means the line is active whenever SA is NOT in the UP position. Name the line as "Gear Down" and you're done.  What happens is: CH5 will be at 100% by default (the first mixer line is in effect), BUT when SA is either in the middle or in the down position the 2nd line will activate and replace the first one, turning the output to -100%. 
 
-If you go back to the mixer screen and play with SA you'll see that when it's not in the UP position the 2nd line will turn bold as it becomes active, while the first one fades back to normal as it's been deactivated by the Replace type of the second line
+If you go back to the mixer screen and play with SA switch, you'll see that when it's in the down or middle position the 2nd line will turn bold as it becomes active.  The first line fades back to normal as it has been deactivated because the Multplx of the second line is set to Replace.
 
 Again that seems long, but takes as much as about 30 seconds when you're used to it.
 
-Of course if you've followed you'll certainly understood that we could have set the second line to use switch "SAup", and that subsequently the role of the 2 lines would be swapped (second active when switch is up, first in the other 2 positions). 
+It is easy to see that we could have set the second line to use switch "SAup", and that subsequently the role of the 2 lines would be swapped (second active when switch is up, first in the other 2 positions). 
 
 But then I wouldn't have had the opportunity to explain the !, and also as a personal preference I like my switch default positions to be UP, and the first mixer line on a channel to be the default value.
 
@@ -169,7 +171,7 @@ CH3 must move with the elevator stick, so we create a mixer line with Ele as sou
 CH3 must also move with the aileron stick, so we create a 2nd mixer line with Ail as source. We leave multiplexing set to "Add", as that's exactly what we want to do - the 2 inputs must be added together.
 
 Now let's discuss the weights a little. They are now set to 100%. This means that a full deflection of the aileron stick will create a full deflection of CH3, same for the elevator stick. But now as we add the 2 together, if we put the stick in the upper right corner (assuming mode 2) we have 100% + 100% = 200% output on CH3. 
-Now, the limits defined on the OUTPUS screen are set to 100% - which means that the output will be clipped. 
+Now, the limits defined on the OUTPUTS screen are set to 100% - which means that the output will be clipped. 
 
 When the mixer's output for a channel goes beyond 100%, the servo won't move any further. 
 
