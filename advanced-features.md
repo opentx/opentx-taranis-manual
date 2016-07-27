@@ -2,7 +2,7 @@
 
 ##Flight modes
 
-Flight modes in OpenTX are relatively simple compared to most radios.
+Flight modes in OpenTX are simple compared to most radios.
 
 The settings are simple: A name (displayed on the main views), a switch to activate them, a trim setting and 2 fade in/out settings.
 
@@ -10,7 +10,7 @@ Yet they are very powerful, because the main settings are actually just located 
 
 Each of these has a flight mode selection list, that will determine in which one(s) they are active.
 
-Most everything is done through dedicated mixers.
+Most everything is controlled through dedicated mixers.
 
 The mixers that are controlled by a flight mode will see their activation fade in/out according to the mode's settings.
 
@@ -18,13 +18,17 @@ As the trims can be made flight-mode specific (they are by default), using fligh
 
 ##Telemetry values
 
-The following will assume your radio is loaded with a microSD card and a valid voice pack, which should be the case as it is supplied with the radio.
+The following assumes your radio is loaded with a microSD card and a valid voice pack.  The microSD card is supplied with the Taranis radio.
 
-Probably the most important telemetry value is RSSI, which is an indication of how much signal the receiver in the model is seeing from the radio, and will warn you in advance if you are at risk of losing control be it due to external interference, excessive distance, badly oriented or damaged antennas etc.
+Probably the most important telemetry value is RSSI, which is an indication of how strong the signal from the receiver is being seen from the radio.
+
+The radio will warn you in advance if you are at risk of losing control be it due to external interference, excessive distance, badly oriented or damaged antennas.
 
 The telemetry settings page gives you 2 alarm levels you can set that will be announced in clear voice ("RF signal low" and "RF signal critical")
 
-They are set by default to levels that have been considered suitable and safe for normal line of sight flight (45 and 42), but if you want to adjust them yourself the following explanations will be useful.
+They are set by default to levels that have been considered suitable and safe for normal line of sight flight (45 and 42).
+
+If you want to adjust them yourself the following explanations will be useful.
 
 RSSI on FrSky equipment is represented using a logarithmic scale (dB), not using percentage. 
 
