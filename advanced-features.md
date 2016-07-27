@@ -159,7 +159,8 @@ The power of the system now comes from the combination of the different features
 
 Logical switches can be used to create conditions that will trigger audio playback.
 
-Two examples:
+**Two examples:**
+
 Using logical switch "LS1|d|>x Alt 10" as trigger for "Play Value Alt" would result in the altitude being announced every time it has changed by 10m/ft. 
 
 Using logical switch "LS2 a < x Spd 35" triggering "Play Track lowspd" would play the lowspd.wav file on the SD card, that could be recorded to say "Low Speed" when GPS speed got under 35km/h.
