@@ -18,15 +18,15 @@ As the trims can be made flight-mode specific (they are by default), using fligh
 
 ##Telemetry values
 
-The following assumes your radio is loaded with a microSD card and a valid voice pack.  The microSD card is supplied with the Taranis radio.
+The following assumes your radio has a micro-SD card and a valid voice pack.  The micro-SD card is included with the Taranis radio.
 
-Probably the most important telemetry value is RSSI, which is an indication of how strong the signal from the receiver is being seen from the radio.
+Probably the most important telemetry value is RSSI.  It is an indication of how strong the signal from the receiver is being seen from the radio.
 
-The radio will warn you in advance if you are at risk of losing control be it due to external interference, excessive distance, badly oriented or damaged antennas.
+The radio will warn you in advance if you are at risk of losing control.  Some possibilities are external interference, excessive distance, badly oriented or damaged antennas.
 
-The telemetry settings page gives you 2 alarm levels you can set that will be announced in clear voice ("RF signal low" and "RF signal critical")
+The telemetry settings page gives you 2 alarm levels you can set.  Each of the entries will announced in clear voice ("RF signal low" and "RF signal critical")
 
-They are set by default to levels that have been considered suitable and safe for normal line of sight flight (45 and 42).
+They are set by default to levels that are suitable and safe for normal line of sight flight (45 and 42).
 
 If you want to adjust them yourself the following explanations will be useful.
 
@@ -34,23 +34,23 @@ RSSI on FrSky equipment is represented using a logarithmic scale (dB), not using
 
 This means that when RSSI is high, a small difference in the distance between the transmitter and receiver will lead to a big change of the RSSI value.
 
-It is perfectly normal to see a value of about 100 when next to the model, and already down in the 70's by the time you've walked to the other end of the field.
+It is perfectly normal to see a value of about 100 when next to the model, and down in the 70's by the time you've walked to the other end of the field.
 
-When you have a reading of 50, it will however take a lot of extra distance to reach the alarm level of 45. 
+When you have a reading of 50, it will, however, take a lot of extra distance to reach the alarm level of 45. 
 
-The basic approximation rule is that a doubling of distance between pilot and model will result in a drop of 6dB of the RSSI value, which should make the previous explanation clear.
+The basic approximation rule is that a doubling of distance between pilot and model, will result in a drop of 6dB of the RSSI value.  Hopefully this makes the previous explanation clear.
 
-If you are 5m away from the model it only takes another 5m to reduce RSSI by 6dB, but if you are 600m away from the model it will then take another 600m to reduce the value by the "same" 6dB.
+If you are 5m away from the model, it only takes another 5m to reduce RSSI by 6dB.  If you are 600m away from the model it will then take another 600m to reduce the value by the "same" 6dB.
 
 Loss of control will happen when RSSI reaches a value of about 38, so setting an alarm at 10 is useless.
 
-From the above explanation you can see that between the default critical alarm (42) and usual practical loss of control we have a margin of about 4dB, or range factor of around 1.5.
+From the above explanation, you can see that between the default critical alarm (42) and usual practical loss of control we have a margin of about 4dB.  This is a range factor of around 1.5.
 
-The alarms are thus rather conservative, and in normal conditions even if you heard the critical alarm you would still be far from losing control (you should be at around >1000m distance, with another 500m to spare).
+The alarms are thus rather conservative, and in normal conditions, even if you heard the critical alarm, you would still be far from losing control.  When the critical alarm sounds you should be at around 1000m distance, with another 500m to spare.
 
-Intermittent loss due to local fades and antenna orientation mismatches could, however, get more and more frequent.
+At this distance intermittent loss could get more and more frequent due to local fades and antenna orientation mismatches.
 
-As mentioned earlier, the default alarms are deemed safe for usual line of sight flight.
+As mentioned earlier, the default alarms are safe for usual line of sight flight.
 
 However, with FPV setups, especially when coupled with automatic return to home systems and properly configured failsafes, the safety margin can be reduced and you should be able to extract more or less double of the standard range out of the system.
 
