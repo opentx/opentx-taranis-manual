@@ -148,7 +148,7 @@ This is the way to adjust values in flight.
 
 The special function's switch serves as a "lock" to freeze the value or allow adjustment.
 
-When a variable is being updated, a popup with the variable name and new value will show up on the main views.
+When a variable is being updated, a popup with the  variable name and new value will show up on the main views.
 
 One of the available sources for adjusting global vars is the list of channels.
 
