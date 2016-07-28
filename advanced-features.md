@@ -54,51 +54,57 @@ As mentioned earlier, the default alarms are safe for usual line of sight flight
 
 However, with FPV setups, especially when coupled with automatic return to home systems and properly configured failsafes, the safety margin can be reduced and you should be able to extract more or less double of the standard range out of the system.
 
-It is up to you to safely experiment.
+It is up to you to experiment safely.
 
 Once the margin gets reduced, influence of external interference sources will start to become more noticeable.
 
-It is practicly impossible to predict the behavior of a given installation in a particular model.
+It is practically impossible to predict the behavior of a given installation in a particular model.
 
-The Taranis also has an alarm that will warn you of the telemetry downlink being lost or recovered.
+The Taranis also has an alarm that will warn you of the telemetry down-link is lost or recovered.
 
-The telemetry link behaves similarly to the control link and is transmitted with the same power level, so it should have essentially similar range, and the conservative alarms for the control link described above should ensure the telemetry link is always available.
+The telemetry link behaves similarly to the control link. It is transmitted with the same power level, so it should have a similar range.  The conservative alarms for the control link, as described above, should ensure the telemetry link is always available.
 
 However, it is possible that for any reason (manufacturing tolerances resulting in slightly different range of the up and down links, local interference sources in close proximity to the radio,...) the telemetry link is lost prematurely, in which case a warning is essential as you need to be aware that any telemetry-based alarms will NOT sound anymore.
 
-Obviously, if the radio can't pick up the RSSI info from the receiver it won't be able to warn you about low RSSI.
+It makes sense that if the radio can't pick up the RSSI info from the receiver it won't be able to warn you about low RSSI.
 
 Similarly, if you are relying on information from an onboard voltage or current sensor to know when to land, the alarms you set for this won't sound if telemetry data is unavailable.
 
-So be aware of the "Telemetry lost" audio alert and act accordingly, whether by falling back to other sources of info or by turning back to land and investigate the reason for the loss of telemetry feed.
+It is important to be aware of the "Telemetry lost" audio alert and act accordingly.  Fall back to other sources of info or by turning back to land and investigate the reason for the loss of telemetry feed.
 
-Note that when the radio and receiver are very close to each other (usually less than a meter) you may get spurious "telemetry lost" and "telemetry recovered" alarms. 
+It is possible to receive spurious "telemetry lost" and "telemetry recovered" messages when the transmitter and receiver are less than a meter apart.
 
-This is not a malfunction and will stop when the 2 devices are separated.
+This is not a malfunction and will stop when the 2 devices are physically separated.
 
-The rest of the telemetry subject in itself has mostly been covered already.
+The rest of the telemetry subject in itself has already been covered.
 
-The telemetry settings page allows you to configure the different parameters that have been explained in the menu overviews. 
+The telemetry views will show the data as configured.  If you have a micro-SD card in your radio, you can use the "SD Logs" special function to record the telemetry data while in flight.
 
-The telemetry views will show the data as configured. If you have a microSD card in your radio, you can use the "SD Logs" custom function to record the telemetry data while in flight.
-
-It can then be played back in OpenTX companion or opened in spreadsheet programs.
+You can then play it back in OpenTX companion or opened in spreadsheet programs.
 
 ## Audio
 
 One of the major features of the radio is the speech output function.
 
-Provided a microSD card (FAT12/16/32 format) loaded with the sound pack available for download from within OpenTX companion is inserted in the slot in the battery compartment, the radio will be able to play audio files in response to various events.
+The Taranis radio is capable of playing sounds in response to specific events.
 
-The events like reaching trim center/ends and activation of a switch (physical or custom), to play a background music file, and last but not least to announce every available value (telemetry, parameter, stick position) in clear voice.
+The sound pack is available for download from within OpenTX companion.
 
-Custom sounds can be placed in the SOUNDS/(selected_language) folder of the card and will be available for use (name must be 8 characters at most, not counting the .wav extension, and with no special characters).
+Extract the ZIP file to the root of the micro-SD card (FAT12/16/43 format).  It will create the necessary sub-directories (e.g. SOUNDS/en for the English pack). 
+
+To use the micro-SD card insert it in the card slot within the battery compartment.
+
+Sounds will play in a clear voice for events like:
+    * Reaching trim center/ends
+    * Activation of a physical or custom switch
+    * Signal low/critical
+    * Telemetry lost/recovered
+
+You can even play music in the background.
+
+Custom sounds can be placed in the SOUNDS/(selected_language) folder of the card and will be available for use.  The name must be 8 characters at most, not counting the .wav extension, and with no special characters.
 
 Language is set in the radio general settings and can be changed on the fly as long as the pack for that language is loaded on the card.
-
-ZIP files with the standard voice packs can be downloaded from within OpenTX companion.
-
-Extract the ZIP file to the root of the SD card, and it will create the necessary subdirectories (e.g. SOUNDS/en for the English pack). 
 
 If you wish to create your own files, the required format is:
 WAV, 8 or 16 bit, Mono
@@ -108,24 +114,25 @@ PCM, u-law or a-law compression
 The stock sounds above use the best available quality, i.e. 16bit, 32kHz and PCM.
 
 Audio operation is relatively simple as it only consists of 5 "and a half" Special Functions:
-* Play Track: Just play an audio file from the SD card when the associated switch is active.  A repeat option is available, when set the sound will repeat at the set interval as long as the switch is active. This can be used to announce flight modes, gear position, flap position etc when the associated switch is activated or on request.
-* Play Value: Say the value of the selected parameter when the switch is active. The repeat parameter is available too.
-* BgMusic: Starts playback of a background music track (that can of course also be a timed flight program announcement). The switch must stay on in order to continue playback.
-* BgMusic ||: This pauses the background track while active, and resumes playback when deactivated. The BgMusic switch must stay active the whole time or the track will start from the beginning again.
-* Vario: Reproduces the sound of a glider variometer using the altitude or Vertical speed telemetry data.
-* Volume: Adjusts the audio volume for the entire radio to the value of an input, e.g. a pot.
+* **Play Track:** Just play an audio file from the SD card when the associated switch is active.  A repeat option is available, when set the sound will repeat at the set interval as long as the switch is active.  This can be used to announce flight modes, gear position, flap position etc when the associated switch is activated or on request.
+* **Play Value:** Say the value of the selected parameter when the switch is active. The repeat parameter is available too.
+* **BgMusic:** Starts playback of a background sound track.  Possibilities include a sound track or a timed flight program announcement. The switch must stay on to continue playback.
+* **BgMusic ||:** This pauses the background track while active, and resumes playback when deactivated. The BgMusic switch must stay active the whole time or the track will start from the beginning again.
+* **Vario:** Reproduces the sound of a glider variometer.  The variometer uses the altitude or vertical speed telemetry data.
+* **Volume:** Adjusts the audio volume for the entire radio to the value of an input, e.g. a pot.
 
-In addition to the sounds played by custom functions, there are a few predefined sounds that will be played automatically when an event happens if an appropriately named file is placed in the right folder.
+There are a some predefined sounds that are played automatically when an event happens.  This is accomplished by placing an appropriately named file in the right folder.
 
-Currently the following events are supported:
+Custom sounds for the following events are supported:
 * Flight Mode Change:
 
-  When flight mode is activated, file /SOUNDS/(selected_language)/modelname/flightmodename-ON.wav is played if present
+  When flight mode is activated, file /SOUNDS/(selected_language)/modelname/flightmodename-ON.wav is played if present.
 
   When flight mode is deactivated, file /SOUNDS/(selected_language)/modelname/flightmodename-OFF.wav is played if present.
 
   The "modelname" and "flightmodename" folder should be identical (including case) to your model's name and flight mode name respectively, with spaces replaced by underscores.
-  Of course only the files you want and place on the card will be played, if something doesn't interest you then just don't put a file for it.
+  
+  Of course only the files you want and place on the card are played, if something doesn't interest you then just don't put a file for it.
 
 ## Global variables
 
