@@ -15,12 +15,24 @@ An important thing to understand is how things are stored on the radio. We will 
 OpenTX Companion will thus handle 2 different types of files.
 
 Firmware files, that can be downloaded from the Preferences dialog, which are non-editable and can just be transferred to/from the radio, and EEPROM files for which OpenTX companion provides an editor that allows to change anything in the same way that would be done on the radio itself.
-When creating (File->New) or opening (either by dragging it onto the main window or via the File->Open menu command) an EEPROM file, a document window will appear. Several of those windows can be open at the same time, allowing you to copy models or settings between files. Trying to open a firmware file the same way will throw an error saying the file is invalid - this doesn't mean that the firmware is invalid, but simply that it is not a settings file.
+
+When creating (File->New) or opening (either by dragging it onto the main window or via the File->Open menu command) an EEPROM file, a document window will appear.
+
+Several of those windows can be open at the same time, allowing you to copy models or settings between files.
+
+Trying to open a firmware file the same way will throw an error saying the file is invalid - this doesn't mean that the firmware is invalid, but simply that it is not a settings file.
 
 ![](images/companion-models-list.png)
 
-The document window consists in a "General Settings" entry on which you can double-click to access the radio settings, and a number of model slots (60 for the Taranis). The model slot that is displayed in bold is the one that is currently selected on the radio. It can be chosen in OpenTX companion by right-clicking on the model slot, and choosing "Use as default". Double-clicking on a model slot will open the editor for that model, creating one if it was empty.
-Memory operations to/from the radio are handled by the different entries of the "Burn" menu:
+The document window consists in a "General Settings" entry on which you can double-click to access the radio settings, and a number of model slots (60 for the Taranis).
+
+The model slot that is displayed in bold is the one that is currently selected on the radio.
+
+It can be chosen in OpenTX companion by right-clicking on the model slot, and choosing "Use as default".
+
+Double-clicking on a model slot will open the editor for that model, creating one if it was empty.
+
+Memory operations to/from the radio are handled by the different entries of the "Read/Write" menu:
 
 ![](images/companion-menu-read-write.png)
 
