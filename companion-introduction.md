@@ -56,8 +56,6 @@ Open the Settings Dialog with Settings->Settings.
 
 There are three tabs.
 
-Application settings:
-Simulator settings:
 Radio Profile:
 * Profile name
 * Radio type
@@ -69,6 +67,7 @@ Radio Profile:
   * ppmus: Displays channel values in microseconds instead of %.
   * sqt5font: An alternative display font.
   * faimode: Disables all telemetry except for RSSI and voltage, for compliance with contest regulations.
+  * 
   * faichoice: Adds a menu entry in the radio general settings to enable FAI mode. Allows you to train on contest day with telemetry, then turn FAI mode on in the menu before the contest to disable telemetry. FAI mode can then not be turned off on the radio again without connecting to a computer to avoid cheating.
 * Splash screen replacement settings: The splash screen is the image that is displayed on the radio's screen when powering it up. Downloaded firmwares come with the standard OpenTX logo, but many users like to customise it. So you can select a folder where you store your own splash screens, and select a default one either from a file or from OpenTX companion's library (note the library doesn't have Taranis-sized ones yet). Splash screens need to be 212x64 pixels for Taranis, up to 16 grayscales. You will be able to apply your splash screen choice when you flash the firmware.
 * SD structure path: For radios with SD cards, Taranis and sky9x board, this lets you choose a folder on your hard drive where you have made a copy of what is on the SD card of the radio.  This allows OpenTX companion to populate the model image selector with the images that are on the card, and do the same for audio files.
@@ -76,6 +75,17 @@ Radio Profile:
 * Default Stick mode and channel order: These will be applied when creating a new EEPROM document in OpenTX companion.
 * Automatically add version number to firmware files: When downloading a firmware file, its name includes the selected options. If this box is checked, the revision number will be appended to the filename to make it more convenient to maintain files of different versions.
 * Offer to write FW to TX after download. 
+
+Application settings:
+* Google Earth Executable
+* Files to keep - number of firmware files to keep
+* Automatic Backup Folder
+* Enable writing automatic before writing firmware.
+* Splash Screen Library
+* User Splash Screens - location to store user created splash screens.
+
+Simulator settings:
+* Simulator Capture settings
 * Software language
 * Automatic update check at launch for both OpenTX companion itself and the selected firmware
 * A choice of whether to display the welcome screen when launching OpenTX companion
