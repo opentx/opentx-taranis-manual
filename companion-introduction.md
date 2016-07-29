@@ -1,6 +1,6 @@
 # Introduction to OpenTX companion
 
-As we have briefly mentioned, OpenTX comes with a computer-based counterpart that runs on Windows, Mac OS and Linux, OpenTX Companion. This software will allow you to backup, edit and share your radio's settings. It can also simulate both a model's setup and the radio's own interface on the computer, so it's a great tool to try things even without a radio. When you have one, it can speed up new model setups significantly thanks to the PC interface that's not limited to a small screen and a few buttons.
+OpenTX comes with a computer-based counterpart that runs on Windows, Mac OS and Linux, OpenTX Companion.  This software will allow you to backup, edit and share your radio's settings.  It can also simulate both a model's setup and the radio's own interface on the computer.  It is a great tool to try things even without a radio.  It can speed up new model setups because the PC interface is not limited to a small screen and a few buttons.
 
 ## Basic concepts
 
@@ -8,8 +8,8 @@ OpenTX companion handles 2 main tasks:
 * Managing radio settings and models
 * Downloading new radio firmwares, and transferring them to the radio.
 
-An important thing to understand is how things are stored on the radio. We will regularly talk of 2 different types of memories, Flash and EEPROM.
-* Flash is the memory where the radio's firmware or "operating system" resides. "Flashing the radio" means replacing the firmware, which you would usually do either to upgrade to a newer version or to change language. Models and settings are not affected when flashing the firmware. On the Taranis, flashing is done with the radio OFF. So turn the radio off, then plug it to the computer's USB port.
+An important thing to understand is how things are stored on the radio. We will talk of 2 different types of memories, Flash and EEPROM.
+* Flash is the memory where the radio's firmware or "operating system" resides. "Flashing the radio" means replacing the firmware.   would usually do either to upgrade to a newer version or to change language. Models and settings are not affected when flashing the firmware. On the Taranis, flashing is done with the radio OFF. So turn the radio off, then plug it to the computer's USB port.
 * EEPROM is the separate settings/model memory. Reading it allows backing up and editing in OpenTX companion, writing it sends the result of the edits back to the radio. On the Taranis, this is done with the radio ON. Turn it on, dismiss any warnings in order to get to the main views, then plug the USB cable. You will see two USB drives appear, one is the SD card, and one is the EEPROM virtual drive.
 
 OpenTX Companion will thus handle 2 different types of files. Firmware files, that can be downloaded from the Preferences dialog, which are non-editable and can just be transferred to/from the radio, and EEPROM files for which OpenTX companion provides an editor that allows to change anything in the same way that would be done on the radio itself.
