@@ -67,7 +67,6 @@ Radio Profile:
   * ppmus: Displays channel values in microseconds instead of %.
   * sqt5font: An alternative display font.
   * faimode: Disables all telemetry except for RSSI and voltage, for compliance with contest regulations.
-  * 
   * faichoice: Adds a menu entry in the radio general settings to enable FAI mode. Allows you to train on contest day with telemetry, then turn FAI mode on in the menu before the contest to disable telemetry. FAI mode can then not be turned off on the radio again without connecting to a computer to avoid cheating.
 * Splash screen replacement settings: The splash screen is the image that is displayed on the radio's screen when powering it up. Downloaded firmwares come with the standard OpenTX logo, but many users like to customise it. So you can select a folder where you store your own splash screens, and select a default one either from a file or from OpenTX companion's library (note the library doesn't have Taranis-sized ones yet). Splash screens need to be 212x64 pixels for Taranis, up to 16 grayscales. You will be able to apply your splash screen choice when you flash the firmware.
 * SD structure path: For radios with SD cards, Taranis and sky9x board, this lets you choose a folder on your hard drive where you have made a copy of what is on the SD card of the radio.  This allows OpenTX companion to populate the model image selector with the images that are on the card, and do the same for audio files.
