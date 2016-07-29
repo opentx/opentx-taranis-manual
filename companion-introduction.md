@@ -32,41 +32,61 @@ It can be chosen in OpenTX companion by right-clicking on the model slot, and ch
 
 Double-clicking on a model slot will open the editor for that model, creating one if it was empty.
 
-Memory operations to/from the radio are handled by the different entries of the "Read/Write" menu:
 
 ![](images/companion-menu-read-write.png)
 
+
+Memory operations to/from the radio are handled by the different entries of the "Read/Write" menu:
 * Read EEPROM from TX will read the EEPROM contents from the radio, and open them in a new document in OpenTX companion. The document is opened for editing, but is not saved to disk automatically.
 * Write EEPROM to TX sends a currently open and selected document (if you have more than one open, make sure to click on the one you want to transfer first to select it) to the radio.
 * Read EEPROM memory to File will read the EEPROM contents from the radio directly into a file. This is the preferred way to backup your radio's settings as it will be saved "as is" without OpenTX companion processing it. Click the entry, choose a location and filename, and save.
 * Write EEPROM memory from File will allow you to select a file, and will transfer it as is to the radio. This is the preferred way to restore a backup as again no processing is going on.
 * Write Flash memory will flash the radio's firmware from the selected file. Once the file is selected, you have the option to replace the default splash screen with an image of your choice, or the default image selected in the preferences.
-Read Flash memory will back up the firmware that is currently on the radio to a file.
+* Read Flash memory will back up the firmware that is currently on the radio to a file.
 
 ## Setting up OpenTX Companion for Taranis
 
-The first thing is of course to download and install the appropriate version of OpenTX Companion for your system from the OpenTX home page. Once the program is launched, you will see the main window. Open the Settings Dialog with Settings->Setting.
+The first thing is of course to download and install the appropriate version of OpenTX Companion for your system from the OpenTX home page.
+
+Once the program is launched, you will see the main window.
+
+Open the Settings Dialog with Settings->Settings.
 
 ![](images/companion-settings.png)
 
-There are quite a few settings there:
+There are three tabs.
+
+Application settings:
+Simulator settings:
+Radio Profile:
+* Profile name
+* Radio type
+* Menu Language
+* Build Options
+  * noheli: Removes the Heli CCPM mixer menu page.
+  * notemplates: Removes the Templates menu page.
+  * nogvars: Disables global variable support and the associated menu page.
+  * ppmus: Displays channel values in microseconds instead of %.
+  * sqt5font: An alternative display font.
+  * faimode: Disables all telemetry except for RSSI and voltage, for compliance with contest regulations.
+  * faichoice: Adds a menu entry in the radio general settings to enable FAI mode. Allows you to train on contest day with telemetry, then turn FAI mode on in the menu before the contest to disable telemetry. FAI mode can then not be turned off on the radio again without connecting to a computer to avoid cheating.
+* Splash screen replacement settings: The splash screen is the image that is displayed on the radio's screen when powering it up. Downloaded firmwares come with the standard OpenTX logo, but many users like to customise it. So you can select a folder where you store your own splash screens, and select a default one either from a file or from OpenTX companion's library (note the library doesn't have Taranis-sized ones yet). Splash screens need to be 212x64 pixels for Taranis, up to 16 grayscales. You will be able to apply your splash screen choice when you flash the firmware.
+* SD structure path: For radios with SD cards, Taranis and sky9x board, this lets you choose a folder on your hard drive where you have made a copy of what is on the SD card of the radio.  This allows OpenTX companion to populate the model image selector with the images that are on the card, and do the same for audio files.
+* Backup Folder
+* Default Stick mode and channel order: These will be applied when creating a new EEPROM document in OpenTX companion.
+* Automatically add version number to firmware files: When downloading a firmware file, its name includes the selected options. If this box is checked, the revision number will be appended to the filename to make it more convenient to maintain files of different versions.
+* Offer to write FW to TX after download. 
 * Software language
 * Automatic update check at launch for both OpenTX companion itself and the selected firmware
 * A choice of whether to display the welcome screen when launching OpenTX companion
 * Simulator options: Whether to remember switch positions between 2 sessions (useful when closing the simulator to edit something and coming back), backlight color, and screenshot save location
-* Splash screen replacement settings: The splash screen is the image that is displayed on the radio's screen when powering it up. Downloaded firmwares come with the standard OpenTX logo, but many users like to customise it. So you can select a folder where you store your own splash screens, and select a default one either from a file or from OpenTX companion's library (note the library doesn't have Taranis-sized ones yet). Splash screens need to be 212x64 pixels for Taranis, up to 16 grayscales. You will be able to apply your splash screen choice when you flash the firmware.
+
 * EEPROM backup folder: Not used for Taranis.
 * Firmware type, language and options: this is where you will choose which firmware and radio type you will be using with OpenTX companion. It is important that these setting always match the firmware type and options currently on the radio. For Taranis the choice has been intentionally limited so that most of the functionality is available to everyone by default. A few "personal choice" options remain:
-noheli: Removes the Heli CCPM mixer menu page.
-notemplates: Removes the Templates menu page.
-nogvars: Disables global variable support and the associated menu page.
-ppmus: Displays channel values in microseconds instead of %.
-sqt5font: An alternative display font.
-faimode: Disables all telemetry except for RSSI and voltage, for compliance with contest regulations.
-faichoice: Adds a menu entry in the radio general settings to enable FAI mode. Allows you to train on contest day with telemetry, then turn FAI mode on in the menu before the contest to disable telemetry. FAI mode can then not be turned off on the radio again without connecting to a computer to avoid cheating.
-* SD structure path: For the Taranis and sky9x board, this lets you choose a folder on your hard drive where you have made a copy of what is on the SD card of the radio. This allows OpenTX companion to populate the model image selector with the images that are on the card, and do the same for audio files.
-Automatically add version number to firmware files: When downloading a firmware file, its name includes the selected options. If this box is checked, the revision number will be appended to the filename to make it more convenient to maintain files of different versions.
-* Default Stick mode and channel order: These will be applied when creating a new EEPROM document in OpenTX companion.
+
+
+
+
 * Profiles: Allows storing different setting sets and easily switching between them. For example, if you have 2 different radios with different firmwares or board types it is not convenient to have to redo all settings (firmware selection, ticking options,...) every time you want to do operations on the other radio. So you can configure all settings, choose an empty profile with the number box, type a name to identify the particular radio, and click save. Do the same for the second radio. You will now be able to select the correct profile for the radio you are about to work on with the profile selector button and menu entry on OpenTX companion's main window. Note that the profiles can also store and retrieve each radio's stick calibration and hardware settings (voltage alarms, audio modes,...) from the General Settings page of an open document. This allows copying a document from one radio to the other without needing recalibration or reentering the hardware settings.
 
 Joystick: This lets you configure a joystick to simulate the sticks in the radio simulator.
