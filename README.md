@@ -10,7 +10,7 @@ We don't bite, but like to know what's going on, so just ask :)
 
 Everybody knows by now that FrSky has chosen OpenTX as the operating system for their new Taranis radio :)
 
-This manual is intended to describe the OpenTX firmware installed on the Taranis.
+This manual intends to describe the OpenTX firmware installed on the Taranis.
 
 It will offer some explanations about the philosophy of the firmware and how to set up models.
 
