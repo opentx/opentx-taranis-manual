@@ -9,7 +9,7 @@
    * [Telemetry views](telemetry_views.md)
    * [Radio menus](radio_menus.md)
        * [Calibration](radio_calibration.md)
-       * Hardware
+       * [Hardware](radio_hardware.md)
    * [Model menus](model_menus.md)
        * [Model Setup](model_setup.md)
        * [Heli Setup](heli_setup.md)
