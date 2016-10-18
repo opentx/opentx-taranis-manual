@@ -2,6 +2,6 @@
 
 Global functions are special functions that are applied across all planes.
 
-Refer to [Special Function](special-functions.md) 
+Refer to [Special Functions](special_functions.md) for information on allowable settings.
 
 ![](images/global-functions.png)
