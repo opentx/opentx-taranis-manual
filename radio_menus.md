@@ -1,6 +1,6 @@
 ## Radio menus
 
-A LONG press of the MENU key brings up the mostly self-explanatory radio setup menu:
+A LONG press of the MENU key brings up the radio setup menu:
 
 ![](images/radio-setup.png)
 
