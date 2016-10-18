@@ -11,6 +11,7 @@
        * [Calibration](radio_calibration.md)
        * [Hardware](radio_hardware.md)
        * [SD Browser](radio_sd_browser.md)
+       * Trainer
    * [Model menus](model_menus.md)
        * [Model Setup](model_setup.md)
        * [Heli Setup](heli_setup.md)
