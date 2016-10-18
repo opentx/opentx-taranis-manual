@@ -164,11 +164,11 @@ Create a mixer line on say CH12, and use the weight/offset/curve parameters to m
 
 Then set the Adjust GV1 source to CH12.
 
-A few interaction examples
+Some interaction examples
 
 The power of the system now comes from the combination of the different features.
 
-Logical switches can be used to create conditions that will trigger audio playback.
+Logical switches are sometimes used to create conditions that will trigger audio playback.
 
 **Two examples:**
 
