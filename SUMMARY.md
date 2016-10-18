@@ -14,6 +14,7 @@
        * [Hardware](radio_hardware.md)
        * [Version](radio_version.md)
        * [Diagnostics](radio_diagnostics.md)
+       * Global Functions
    * [Model menus](model_menus.md)
        * [Model Setup](model_setup.md)
        * [Heli Setup](heli_setup.md)
