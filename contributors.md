@@ -1,5 +1,7 @@
 # Contributors
 
+The people here are major contributors
+
 ## Radio Firmware
 
 | Name | Last Contributed |
@@ -14,13 +16,17 @@
 
 | Name | Last Contributed |
 | --- | --- |
-
+| Betran Songis |  |
+| Andre Bernet |  |
+| Damjan Adamic |  |
+| Kjell Kernen |  |
 
 ## Documentation
 
 | Name | Last Contributed |
 | --- | --- |
-| Mike Barsalou | July 23rd, 2016 |
+| Mike Barsalou | January 8th, 2017 |
+| Bertrand Songis |  |
 | Andre Bernet | August 24th, 2015 |
 
 
