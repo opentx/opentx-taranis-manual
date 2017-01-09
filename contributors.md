@@ -1,18 +1,27 @@
-
 # Contributors
 
-##Radio Firmware
-| Name | Last Contributed|
-| -- | -- |
+## Radio Firmware
 
-##Companion Software
-| Name | Last Contributed|
-| -- | -- |
+| Name | Last Contributed |
+| :--- | :--- |
+| Bertrand Songis |  |
+| Andre Bernet |  |
+| Damjan Adamic |  |
+| Kjell Kernen |  |
+| Martin Hotar |  |
 
-##Documentation
-| Name | Last Contributed|
-| -- | -- |
+## Companion Software
+
+| Name | Last Contributed |
+| --- | --- |
+
+
+## Documentation
+
+| Name | Last Contributed |
+| --- | --- |
 | Mike Barsalou | July 23rd, 2016 |
-| Andre Bernet  | August 24th, 2015 |
+| Andre Bernet | August 24th, 2015 |
+
 
 
