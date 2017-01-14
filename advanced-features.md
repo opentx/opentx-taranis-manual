@@ -164,11 +164,11 @@ Create a mixer line on say CH12, and use the weight/offset/curve parameters to m
 
 Then set the Adjust GV1 source to CH12.
 
-A few interaction examples
+Some interaction examples
 
 The power of the system now comes from the combination of the different features.
 
-Logical switches can be used to create conditions that will trigger audio playback.
+Logical switches are sometimes used to create conditions that will trigger audio playback.
 
 **Two examples:**
 
@@ -180,7 +180,22 @@ If you have several parameters you want to have announced sequentially on reques
 
 A press of this switch will then trigger playback of all the parameters one after the other.
 
-But as we know that logical switches can be used anywhere a switch is definable, nothing prevents you from reusing that same LS2 to trigger automatic flaps deployment once speed got below 35km/h.
+Logical switches can be used anywhere a switch is definable.  Nothing prevents you from reusing that same LS2 to trigger automatic flaps deployment once speed got below 35km/h.
 
 That's right, anything can be used to affect anything.
 
+## Flashing the bootloader
+
+From time to time it will be necessary to flash the bootloader with a newer version.
+
+Copy the currently downloaded firmware (.bin file) into the FIRMWARE directory of the SD card.
+
+First you have to jump into the [Radio Menu](radio_menus.md) then hit the page button until you get to the SD CARD menu.   
+
+Highlight the FIRMWARE directory and press the [Ent] key.
+
+Highlight the bin file and Long Press [Ent].
+
+Choose flash bootloader from the menu and press [Ent].
+
+You can verify the bootloader version by going into the VERSION page of the Radio Menu.
