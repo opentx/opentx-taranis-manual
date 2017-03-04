@@ -31,7 +31,7 @@
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
    * [Flight modes](advanced/flight_modes.md)
-   * [Telemetry Values](telemetry_values.md)
+   * [Telemetry Values](advanced/telemetry_values.md)
 * [Companion introduction](companion-introduction.md)
 * [Contributors](contributors.md)
 
