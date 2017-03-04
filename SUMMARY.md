@@ -32,7 +32,7 @@
 * [Advanced features](advanced-features.md)
    * [Flight modes](advanced/flight_modes.md)
    * [Telemetry Values](advanced/telemetry_values.md)
-   * Audio
+   * [Audio](advanced/audio.md)
 * [Companion introduction](companion-introduction.md)
 * [Contributors](contributors.md)
 
