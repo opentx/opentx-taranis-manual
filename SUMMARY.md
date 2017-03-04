@@ -34,6 +34,7 @@
    * [Telemetry Values](advanced/telemetry_values.md)
    * [Audio](advanced/audio.md)
    * [Global variables](advanced/global_variables.md)
+   * Flashing the bootloader
 * [Companion introduction](companion-introduction.md)
 * [Contributors](contributors.md)
 
