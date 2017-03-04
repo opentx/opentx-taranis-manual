@@ -33,6 +33,7 @@
    * [Flight modes](advanced/flight_modes.md)
    * [Telemetry Values](advanced/telemetry_values.md)
    * [Audio](advanced/audio.md)
+   * Global variables
 * [Companion introduction](companion-introduction.md)
 * [Contributors](contributors.md)
 
