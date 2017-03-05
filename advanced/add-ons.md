@@ -8,4 +8,5 @@ LView - https://github.com/RealTadango/FrSky/tree/master/LView - Lua log viewer 
 
 ##Taranis
 
+Amber Sound pack - https://www.dropbox.com/s/3t7p9t6ykufhsfx/Amber22.rar?dl=0 - Download only
 
