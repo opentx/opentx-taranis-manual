@@ -35,7 +35,7 @@
    * [Audio](advanced/audio.md)
    * [Global variables](advanced/global_variables.md)
    * [Flashing the bootloader](advanced/flashing_the_bootloader.md)
-   * Add-ons
+   * [Add-ons](advanced/add-ons.md)
 * [Companion introduction](companion-introduction.md)
 * [Contributors](contributors.md)
 
