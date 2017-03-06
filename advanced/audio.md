@@ -18,7 +18,7 @@ Sounds will play in a clear voice for events like:
 
 You can even play music in the background.
 
-Custom sounds can be placed in the SOUNDS/(selected_language) folder of the card and will be available for use.  The name must be 8 characters at most, not counting the .wav extension, and with no special characters.
+Custom sounds go in the SOUNDS/(selected_language) folder of the card and will be available for use.  The name must be 8 characters at most, not counting the .wav extension, and with no special characters.
 
 Language is set in the radio general settings and can be changed on the fly as long as the pack for that language is loaded on the card.
 
