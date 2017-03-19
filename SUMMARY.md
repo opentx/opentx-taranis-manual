@@ -30,6 +30,12 @@
        * [Telemetry](telemetry.md)
 * [First steps](first-steps.md)
 * [Advanced features](advanced-features.md)
+   * [Flight modes](advanced/flight_modes.md)
+   * [Telemetry Values](advanced/telemetry_values.md)
+   * [Audio](advanced/audio.md)
+   * [Global variables](advanced/global_variables.md)
+   * [Flashing the bootloader](advanced/flashing_the_bootloader.md)
+   * [Add-ons](advanced/add-ons.md)
 * [Companion introduction](companion-introduction.md)
 * [Contributors](contributors.md)
 
