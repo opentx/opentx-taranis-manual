@@ -36,6 +36,7 @@
    * [Global variables](advanced/global_variables.md)
    * [Flashing the bootloader](advanced/flashing_the_bootloader.md)
    * [Add-ons](advanced/add-ons.md)
+   * S-PORT flashing
 * [Companion introduction](companion-introduction.md)
 * [Contributors](contributors.md)
 
