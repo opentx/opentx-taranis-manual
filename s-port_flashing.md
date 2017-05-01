@@ -8,11 +8,11 @@
   
 - Place the firmware on the SDCARD in the FIRMWARE folder
   
-  ![](images/sport-flash-104-sd-hc-firmware.bmp)
+  ![](images/sport-flash-104-sd-hc-firmware.png)
 
 - Ensure that the file name is 33 characters or less including the dot and extension
 
-  ![](images/sport-flash-106-sd-hc-firmware-file-selected.bmp)
+  ![](images/sport-flash-106-sd-hc-firmware-file-selected.png)
   
 ## Hardware Preparation
 
@@ -52,33 +52,33 @@
 
 - From the main view
 
-  ![](images/sport-flash-101-main-view.bmp)
+  ![](images/sport-flash-101-main-view.png)
   
 - Long press MENU
 
-  ![](images/sport-flash-102-radio-setup.bmp)
+  ![](images/sport-flash-102-radio-setup.png)
   
 - Press PAGE to get to the SD-HC CARD screen
 
-  ![](images/sport-flash-103-sd-hc-card.bmp)
+  ![](images/sport-flash-103-sd-hc-card.png)
   
 - Scroll down to the FIRMWARE directory
 
-  ![](images/sport-flash-104-sd-hc-firmware.bmp)
+  ![](images/sport-flash-104-sd-hc-firmware.png)
   
 - Press ENT to enter the directory
 
-  ![](images/sport-flash-105-sd-hc-firmware-files.bmp)
+  ![](images/sport-flash-105-sd-hc-firmware-files.png)
   
 - Scroll down to the firmware file
 
-  ![](images/sport-flash-106-sd-hc-firmware-file-selected.bmp)
+  ![](images/sport-flash-106-sd-hc-firmware-file-selected.png)
 
 - Long press ENT to display the pop up menu
 
 - Select Flash ext. device
 
-  ![](images/sport-flash-107-flash-ext.bmp)
+  ![](images/sport-flash-107-flash-ext.png)
   
 - Press ENT
   
@@ -96,7 +96,7 @@
   
   Try a different device and corresponding firmware
 
-  ![](images/sport-flash-109-no-response.bmp)
+  ![](images/sport-flash-109-no-response.png)
   
 - Module refused data
 
@@ -104,5 +104,5 @@
 
   Try a different device and corresponding firmware
   
-  ![](images/sport-flash-110-module-refused-data.bmp)
+  ![](images/sport-flash-110-module-refused-data.png)
   
