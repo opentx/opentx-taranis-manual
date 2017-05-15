@@ -20,9 +20,9 @@
 
 - The external module bay’s +ve pin has the same voltage as the transmitter’s battery
 
-  Check that the device being flashed is rated for the transmitter’s battery voltage
+  - Check that the device being flashed is rated for the transmitter’s battery voltage
 
-  If it is not then either change the battery or add a BEC in between the module bay’s  and device’s power pins
+  - If it is not then either change the battery or add a BEC/voltage converter in between the module bay’s  and device’s power pins
 
 - Use a servo cable with the positive and negative wires swapped at one end
 
@@ -42,11 +42,13 @@
 
 - Plug one end into the bottom S.Port
 
+  ![](images/sport-flash-005-q7-sport.jpg)
+
 - Plug the other end onto the S.Port pins of the device to be flashed
 
-### Taranis Q X7 bottom S.Port pins added
+### Taranis Q X7 bottom S.Port pins added after shipping
 
-- Will not work
+- Will not work due to missing or incorrect circuit components
 
 ## Flashing Steps
 
