@@ -7,6 +7,7 @@ Navigation keys
 * ENTER key starts editing field
 
 While editing a field:
+
 * ENTER SHORT - move to next character or finalize edit
 * ENTER LONG - capitalize/lowercase current letter before moving to next
 
@@ -15,7 +16,7 @@ While editing a field:
 ![](images/model-setup.png)
 
 * Model name: Put the name of your model here.
-* Model image: There you can select a 64x32px, 16-grayscale .bmp file located in the BMP folder of the SD card as your model logo. To be able to preview the images in the folder, use the SD Browser.
+* Model image: There you can select a 64x32px, 16-grayscale .bmp file located in the ``IMAGES`` folder of the SD card as your model logo. To be able to preview the images in the folder, use the SD Browser.
 
 **Timers** 
 
@@ -51,18 +52,23 @@ There are up to 3 fully programmable timers, that can count either up or down.
 * Internal RF:
     * Mode: Transmission mode of the internal RF module (OFF, D16, D8, LR12).
     * Channel range: Choice of which of the radio's internal channels are actually transmitted over the air.
-    *Receiver no (D16 / LR12 only): defines the behavior of the receiver lock function. This number is sent to the receiver, which will only respond to the number it was bound to. By default this is the number of the model's slot when it is created. It can however be changed manually, and will not change if a model is moved or copied. If manual setting or a copy/move operation results in 2 or more models on the radio having the same number, a warning popup will show up. It is then up to the user to determine if this is the desired behavior or not and change if required.
+    * Receiver no (D16 / LR12 only): defines the behavior of the receiver lock function. This number is sent to the receiver, which will only respond to the number it was bound to. By default this is the number of the model's slot when it is created. It can however be changed manually, and will not change if a model is moved or copied. If manual setting or a copy/move operation results in 2 or more models on the radio having the same number, a warning popup will show up. It is then up to the user to determine if this is the desired behavior or not and change if required.
     * Bind and range check fields get activated by a press of the ENTER key. The radio will beep every few seconds to confirm. Range check will display a popup with the RSSI value to evaluate how reception quality is behaving.
     * Failsafe mode (D16 / LR12 only): Allows choosing between simply holding the last received positions, turning off pulses (like old PPM MHz receivers), or moving the servos to custom predefined positions. For custom positions a SET field will call the failsafe settings page, where the position can be defined separately for each channel. Select the desired channel, press ENTER to get in edit mode, move the control to the desired position, and press ENTER to save. In D8 mode this field is hidden, failsafe needs to be set on the receiver as described in the receiver's manual.
 * External RF:
-    * Module type: PPM for generic modules, XJT (same operation modes as above), DSM for Spektrum "hack" modules made using these instructions. Note that the Orange DSM and Spektrum DM9 modules both need PPM.
-    * Channel range: same as for internal module.
-    * Receiver no, Bind, Range check (when module type is XJT): Same as above.
-    * PPM Frame (when module type is PPM): Allows setting the frame length, pulse length, and polarity of the PPM frame. The frame length is automatically adjusted to a safe value when the number of transmitted channels is changed. Advanced users can still adjust it afterwards if necessary.
-    * Failsafe mode: When module type is XJT, same as above.
+   * Module type:
+	- PPM for generic modules, XJT (same operation modes as above)
+        - DSM for Spektrum "hack" modules made using these
+          instructions. Note that the Orange DSM and Spektrum DM9 modules
+          both need PPM.
+        - CRSF TBS Crossfire module
+        - MULT [DIY Multiprotocol TX Module](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module). See its [own documentation on OpenTX](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/blob/master/docs/Tx-Taranis.md) how to setup this module
+   * Channel range: same as for internal module.
+   * Receiver no, Bind, Range check (when module type is XJT): Same as above.
+   * PPM Frame (when module type is PPM): Allows setting the frame length, pulse length, and polarity of the PPM frame. The frame length is automatically adjusted to a safe value when the number of transmitted channels is changed. Advanced users can still adjust it afterwards if necessary.
+   * Failsafe mode: When module type is XJT, same as above.
 * Trainer mode - An icon is shown in the main view when the cable is inserted showing which mode is in use.
    * Master/Jack
    * Slave/Jack -  select channels (1-16) and the PPM frame parameters that should be sent 
    * Master/SBUS module
    * Master/CPPM module
-   
