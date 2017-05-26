@@ -21,7 +21,7 @@ Check the Tx documentation from the manufacturer to determine which microSD card
 
 ![](audio/versionWarning.png)
 
-If an microSD Card is present when the Tx is turned on OpenTX check its root/top level folder for a file to determine if the correct sound pack version is being used.
+If a microSD Card is present when the Tx is turned on OpenTX check its root/top level folder for a file to determine if the correct sound pack version is being used.
 - opentx.sdcard.version
 
   ![](audio/versionFile.png)
