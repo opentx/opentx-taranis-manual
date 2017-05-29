@@ -4,17 +4,17 @@ OpenTX makes sounds in two ways:
 1. Generating tones/beeps of different frequencies and durations
 2. Playing audio files if present on a microSD card
 
-One of the main features of OpenTX is its use of a sound pack placed on a microSD card. This sound pack contain audio files files used for sounds and announcements.
+One of the main features of OpenTX is its use of a sound pack placed on a microSD card. This sound pack contains audio files files used for sounds and announcements.
 
 Sounds & Announcements take place in response to
-- Model Independent event (events not related to model loaded)
-- Model Dependent events (events related to model loaded)
+- Model Independent event (events not related to the model loaded)
+- Model Dependent events (events related to the model loaded)
 - Global & Special Function triggers
 
 
 ## microSD Card
 
-Check the Tx documentation from the manufacturer to determine which microSD card to use. To use the microSD card insert it in the card slot.
+Check the Tx documentation from the manufacturer to determine which microSD card to use. To use the microSD card insert it into the card slot.
 - Format: FAT12/16/32
 
 ### Version Warning
@@ -55,7 +55,7 @@ It is a text file with lines of text. One line per sound file. Each line has thr
 - Tracks: 1, mono
 - Compression Codec: PCM (or u-law, a-law)
 
-### Audio File Locations  & Language Setting
+### Audio File Locations & Language Setting
 
 On the Tx SD CARD in the following folders
 - SOUNDS/
@@ -63,7 +63,7 @@ On the Tx SD CARD in the following folders
 - SOUNDS/language/
   - Files used by Global & Special Functions
   - Different languages are supported
-    E.g. SOUNDS/en/, SOUNDS/de/
+    - E.g. SOUNDS/en/, SOUNDS/de/
   - The language is set on the RADIO SETUP screen
 
     ![](audio/voiceLanguage.png)
@@ -86,8 +86,8 @@ These sounds and announcements are not related to which model is loaded. They ar
 
 Events that may generate sounds and announcements are:
 - Transmitter turned on and off
-  E.g. SOUNDS/en/SYSTEM/hello.wav and SOUNDS/en/SYSTEM/bye.wav
-  Note: bye.wav is not provided but will be played if present
+  - E.g. SOUNDS/en/SYSTEM/hello.wav and SOUNDS/en/SYSTEM/bye.wav
+  - Note: bye.wav is not provided but will be played if present
 - Trim up, down, center, ends/limits
 - Telemetry lost, recovered
 - Tx battery level low
@@ -127,25 +127,25 @@ Events that may generate sounds and announcements are:
 To play sounds specific to a model without configuring them as a Special Function place sound files in the following folder:
 - /SOUNDS/language/model_name/
   - Replace model name spaces with an underscore "_"
-    E.g. /SOUNDS/en/my_model/
+    - E.g. /SOUNDS/en/my_model/
 
 The file names use the following format:
 - Switches & Logical Switches
   - switchID-position.wav
-    SA-up.wav, L1-up.wav \(true\)
-    SA-mid.wav \(if position present\)
-    SA-down.wav, L1-down.wav \(false\)
-    Note: There is no equivalent for SA not up.
+    - SA-up.wav, L1-up.wav \(true\)
+    - SA-mid.wav \(if position present\)
+    - SA-down.wav, L1-down.wav \(false\)
+    - Note: There is no equivalent for SA not up.
 - Multiple Position Switches / Stepped Potentiometers
   - P-switchNumber-position.wav
-    P11.wav
-    P16.wav
-    P24.wav
+    - P11.wav
+    - P16.wav
+    - P24.wav
 - Flight Modes
   - modeName-condition.wav
-    No spaces in the flight mode name
-    ABC–off.wav
-    ABC–on.wav
+    - No spaces in the flight mode name
+    - ABC–off.wav
+    - ABC–on.wav
 
 
 ## Global & Special Functions
@@ -173,7 +173,7 @@ Music Actions
   - Uses files placed in SOUNDS/language/
   - The switch must stay on to continue playback
   - If the switch is turned off and then on again playback starts from the beginning
--- BgMusic II
+- BgMusic II
   - Pauses the active BgMusic
   - When the switch is turned off playback continues from where it was paused
   - The BgMusic switch must remain on
@@ -185,7 +185,7 @@ Other Actions
 - Volume
   - Adjusts the audio volume for the entire radio
   - Use any input from the list
-    E.g. S1
+    - E.g. S1
 
 ## Volume
 
@@ -193,4 +193,5 @@ The audio volume may be configured and controlled from three locations:
 1. [RADIO SETUP](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/radio_menus.html) screen
 2. [GLOBAL FUNCTIONS](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/special_functions.html) screen
 3. [SPECIAL FUNCTIONS](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/special_functions.html)screen
+
 Details of each are covered under the relevant sections.
