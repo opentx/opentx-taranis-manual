@@ -28,4 +28,4 @@ Items included are:
 * Different button layout
 * Adds support for the Taranis' extra hardware capabilities.
 
-You can read this manual online at: https://opentx.gitbooks.io/opentx-taranis-manual/content/
+You can read this manual online at: https://opentx.gitbooks.io/manual-for-opentx-2-2/content/
