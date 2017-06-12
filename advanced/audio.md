@@ -49,7 +49,7 @@ It is a text file with lines of text. One line per sound file. Each line has thr
 
 ### Audio File Format
 
-- File Name: 12345678.wav (up to 8 characters plus .wav)
+- File Name: 123456.wav (up to 6 characters plus .wav)
 - Sample Rate: 32 kHz (or 16 Khz, 8Khz)
 - Bits / Sample: 16 (or 8)
 - Tracks: 1, mono
