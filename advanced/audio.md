@@ -39,7 +39,7 @@ A sound pack is available from within Companion.
 
   ![](audio/dowbloadSDcontents.png)
   
-- The zip file abailable for download depends on the Companion radio profile being used. 
+- The zip file available for download depends on the Companion radio profile being used. 
 - Click on the zip file link to download the microSD card contents
 
   ![](audio/sdZipFileLink.png)
@@ -206,6 +206,6 @@ Other Actions
 The audio volume may be configured and controlled from three locations:
 1. [RADIO SETUP](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/radio_menus.html) screen
 2. [GLOBAL FUNCTIONS](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/special_functions.html) screen
-3. [SPECIAL FUNCTIONS](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/special_functions.html)screen
+3. [SPECIAL FUNCTIONS](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/special_functions.html) screen
 
 Details of each are covered under the relevant sections.
