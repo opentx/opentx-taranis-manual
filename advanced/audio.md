@@ -32,8 +32,21 @@ If the incorrect version is being used then it is possible that some announcemen
 
 A sound pack is available from within Companion.
 - File > Download
-- Extract the ZIP file to the root/top level folder of the microSD Card.  It will create the necessary sub-directories
-  E.g. SOUNDS/en for the English pack
+
+  ![](audio/companionFileDownload.png)
+  
+- Click on Download SD contents
+
+  ![](audio/dowbloadSDcontents.png)
+  
+- The zip file abailable for download depends on the Companion radio profile being used. 
+- Click on the zip file link to download the microSD card contents
+
+  ![](audio/sdZipFileLink.png)
+  
+- Extract the ZIP file to the root/top level folder of the microSD Card. 
+
+  ![](audio/sdUnzippedContents.png)
 
   ![](audio/soundsDirectory.png)
 
