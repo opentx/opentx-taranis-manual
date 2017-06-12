@@ -48,7 +48,8 @@ A sound pack is available from within Companion.
 
   ![](audio/sdUnzippedContents.png)
 
-  ![](audio/soundsDirectory.png)
+ ![](audio/soundsDirectory01.png)
+ ![](audio/soundsDirectory02.png)
 
 ### Announcement To File Mapping / Definitions
 
