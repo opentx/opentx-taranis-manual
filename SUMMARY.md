@@ -37,6 +37,9 @@
    * [Flashing the bootloader](advanced/flashing_the_bootloader.md)
    * [Add-ons](advanced/add-ons.md)
    * [S-PORT flashing](s-port_flashing.md)
-* [Companion introduction](companion-introduction.md)
-* [Contributors](contributors.md)
+* [Companion](companion.md)
+    * [Basic Concepts](companion/basic-concepts.md)
+    * [Setting up for Taranis](companion/taranis.md)
+    * [Flashing Frsky Radios](companion/flashing.md)
+* [Contributors](https://raw.githubusercontent.com/opentx/opentx/2.2/CREDITS.txt)
 
