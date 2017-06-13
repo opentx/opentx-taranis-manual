@@ -12,6 +12,9 @@ Sounds & Announcements take place in response to
 - Global & Special Function triggers
 
 
+## SD Card contents
+SD Card contents can be downloaded as described in [Companion Sdcard](sdcard.md)
+
 ### Announcement To File Mapping / Definitions
 
 The sound mapping/definitions file is used to generate audio files with phrases such as telemetry lost/recovered and units.

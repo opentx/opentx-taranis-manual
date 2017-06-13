@@ -41,6 +41,6 @@
     * [Basic Concepts](companion/basic-concepts.md)
     * [Setting up for Taranis](companion/taranis.md)
     * [Flashing Frsky Radios](companion/flashing.md)
-    * [SD Card contents](companion/sdcard.md)
+* [SD Card contents](sdcard.md)
 * [Contributors](https://raw.githubusercontent.com/opentx/opentx/2.2/CREDITS.txt)
 
