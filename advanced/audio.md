@@ -32,10 +32,24 @@ If the incorrect version is being used then it is possible that some announcemen
 
 A sound pack is available from within Companion.
 - File > Download
-- Extract the ZIP file to the root/top level folder of the microSD Card.  It will create the necessary sub-directories
-  E.g. SOUNDS/en for the English pack
 
-  ![](audio/soundsDirectory.png)
+  ![](audio/companionFileDownload.png)
+  
+- Click on Download SD contents
+
+  ![](audio/dowbloadSDcontents.png)
+  
+- The zip file available for download depends on the Companion radio profile being used. 
+- Click on the zip file link to download the microSD card contents
+
+  ![](audio/sdZipFileLink.png)
+  
+- Extract the ZIP file to the root/top level folder of the microSD Card. 
+
+  ![](audio/sdUnzippedContents.png)
+
+ ![](audio/soundsDirectory01.png)
+ ![](audio/soundsDirectory02.png)
 
 ### Announcement To File Mapping / Definitions
 
@@ -192,6 +206,6 @@ Other Actions
 The audio volume may be configured and controlled from three locations:
 1. [RADIO SETUP](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/radio_menus.html) screen
 2. [GLOBAL FUNCTIONS](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/special_functions.html) screen
-3. [SPECIAL FUNCTIONS](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/special_functions.html)screen
+3. [SPECIAL FUNCTIONS](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/special_functions.html) screen
 
 Details of each are covered under the relevant sections.
