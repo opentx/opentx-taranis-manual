@@ -14,24 +14,7 @@ Radio Profile:
 * Profile name - Name the profile for the hardware.
 * Radio type - Choose the proper model type that you are using.
 * Menu Language - Language you want the menu for the radio to display in.
-* Build Options
-  * notemplates: Removes the Templates menu page.
-  * nogvars: Disables global variable support and the associated menu page.
-  * ppmus: Displays channel values in microseconds instead of %.
-  * timer3: provide a third timer.
-  * cli: Instead of joystick emulation, USB connection is Command Line Interface
-  * sqt5font: An alternative display font.
-  * noheli: Removes the Heli CCPM mixer menu page.
-  * mixersn: Add mixers view to CHANNEL MONITORS screen, pressing [ENT] switches between views.
-  * nooverr: No OVERRIDE CHx functions available.
-  * nogvars: Disable global variables.
-  * eu: Removes D8 and LR12 Frsky protocols that are illegal in Europe after Jan 1st, 2015.
-  * faichoice: Adds a menu entry in the radio general settings to enable FAI mode. Allows you to train on contest day with telemetry, then turn FAI mode on in the menu before the contest to disable telemetry. FAI mode can then not be turned off on the radio again without connecting to a computer to avoid cheating.
-  * lua: Support for lua model scripts.
-  * internal: Support for use with internal module hack.
-  * faimode: Disables all telemetry except for RSSI and voltage, for compliance with contest regulations.
-  * massto:  Instead of joystick emulation, USB connection is mass storage (as in the Bootloader).
-  * ppmus:  Channel values displayed in us.
+* Build Options - See [Build Options](radio_options.md) for details on the different build options
 * Splash screen: selected splash screen.
 * SD structure path: For radios with SD cards, Taranis and sky9x board, this lets you choose a folder on your hard drive where you have made a copy of what is on the SD card of the radio.  This allows OpenTX companion to populate the model image selector with the images that are on the card, and do the same for audio files.
 * Backup Folder: Location of backup eproms

@@ -37,10 +37,13 @@
    * [Flashing the bootloader](advanced/flashing_the_bootloader.md)
    * [Add-ons](advanced/add-ons.md)
    * [S-PORT flashing](s-port_flashing.md)
+   * [Build Option](radio_options.md)
+   * [Joystick emulation](radio_joystick)
+
 * [Companion](companion.md)
     * [Basic Concepts](companion/basic-concepts.md)
     * [Setting up for Taranis](companion/taranis.md)
     * [Flashing Frsky Radios](companion/flashing.md)
+    
 * [SD Card contents](sdcard.md)
 * [Contributors](https://raw.githubusercontent.com/opentx/opentx/2.2/CREDITS.txt)
-
