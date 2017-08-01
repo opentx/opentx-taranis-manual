@@ -73,7 +73,7 @@ Radio Profile:
   * nogvars: Disable global variables.
   * eu: Removes D8 and LR12 Frsky protocols that are illegal in Europe after Jan 1st, 2015.
   * faichoice: Adds a menu entry in the radio general settings to enable FAI mode. Allows you to train on contest day with telemetry, then turn FAI mode on in the menu before the contest to disable telemetry. FAI mode can then not be turned off on the radio again without connecting to a computer to avoid cheating. 
-  * lua: Support for lua model scripts.
+  * lua: Support for lua mixer scripts.The lua engine is always included and will run all other script types regardless of this option.
   * internal: Support for use with internal module hack.
   * faimode: Disables all telemetry except for RSSI and voltage, for compliance with contest regulations.
   * massto:  Instead of joystick emulation, USB connection is mass storage (as in the Bootloader).
