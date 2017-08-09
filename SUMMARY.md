@@ -2,7 +2,8 @@
 
 * [Introduction](README.md)
 * [The radio](the-radio.md)
-* [Software overview](software-overview.md)
+* [Companion PC Software](companion-introduction.md)
+* [OpenTX Radio Firmware](software-overview.md)
    * [Navigation](navigation.md)
    * [Model Selection](model_selection.md)
    * [Main views](main_views.md)
@@ -37,6 +38,5 @@
    * [Flashing the bootloader](advanced/flashing_the_bootloader.md)
    * [Add-ons](advanced/add-ons.md)
    * [S-PORT flashing](s-port_flashing.md)
-* [Companion introduction](companion-introduction.md)
 * [Contributors](contributors.md)
 
