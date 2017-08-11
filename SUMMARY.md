@@ -2,6 +2,14 @@
 
 * [Introduction](README.md)
 * [The radio](the-radio.md)
+* [Build Option](radio_options.md)
+
+
+* [Companion](companion.md)
+    * [Basic Concepts](companion/basic-concepts.md)
+    * [Setting up for Taranis](companion/taranis.md)
+    * [Flashing Frsky Radios](companion/flashing.md)
+
 * [Software overview](software-overview.md)
    * [Navigation](navigation.md)
    * [Model Selection](model_selection.md)
@@ -40,10 +48,5 @@
    * [Build Option](radio_options.md)
    * [Joystick emulation](radio_joystick)
 
-* [Companion](companion.md)
-    * [Basic Concepts](companion/basic-concepts.md)
-    * [Setting up for Taranis](companion/taranis.md)
-    * [Flashing Frsky Radios](companion/flashing.md)
-    
 * [SD Card contents](sdcard.md)
 * [Contributors](https://raw.githubusercontent.com/opentx/opentx/2.2/CREDITS.txt)
