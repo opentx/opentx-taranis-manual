@@ -12,44 +12,8 @@ Sounds & Announcements take place in response to
 - Global & Special Function triggers
 
 
-## microSD Card
-
-Check the Tx documentation from the manufacturer to determine which microSD card to use. To use the microSD card insert it into the card slot.
-- Format: FAT12/16/32
-
-### Version Warning
-
-![](audio/versionWarning.png)
-
-If a microSD Card is present when the Tx is turned on OpenTX check its root/top level folder for a file to determine if the correct sound pack version is being used.
-- opentx.sdcard.version
-
-  ![](audio/versionFile.png)
-
-If the incorrect version is being used then it is possible that some announcements such as telemetry units will be incorrect.
-
-## Sound Packs
-
-A sound pack is available from within Companion.
-- File > Download
-
-  ![](audio/companionFileDownload.png)
-  
-- Click on Download SD contents
-
-  ![](audio/dowbloadSDcontents.png)
-  
-- The zip file available for download depends on the Companion radio profile being used. 
-- Click on the zip file link to download the microSD card contents
-
-  ![](audio/sdZipFileLink.png)
-  
-- Extract the ZIP file to the root/top level folder of the microSD Card. 
-
-  ![](audio/sdUnzippedContents.png)
-
- ![](audio/soundsDirectory01.png)
- ![](audio/soundsDirectory02.png)
+## SD Card contents
+SD Card contents can be downloaded as described in [Companion Sdcard](sdcard.md)
 
 ### Announcement To File Mapping / Definitions
 
