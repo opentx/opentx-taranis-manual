@@ -46,7 +46,7 @@
    * [Add-ons](advanced/add-ons.md)
    * [S-PORT flashing](s-port_flashing.md)
    * [Build Option](radio_options.md)
-   * [Joystick emulation](radio_joystick)
+   * [Joystick emulation](radio_joystick.md)
 
 * [SD Card contents](sdcard.md)
 * [Contributors](https://raw.githubusercontent.com/opentx/opentx/2.2/CREDITS.txt)
