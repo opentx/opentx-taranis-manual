@@ -7,7 +7,7 @@
 
 * [Companion](companion.md)
     * [Basic Concepts](companion/basic-concepts.md)
-    * [Setting up for Taranis](companion/taranis.md)
+    * [Setting up OpenTX Companion](companion/setup.md)
     * [Flashing Frsky Radios](companion/flashing.md)
 
 * [Software overview](software-overview.md)

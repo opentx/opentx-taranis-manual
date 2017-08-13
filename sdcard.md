@@ -5,6 +5,12 @@ microSD card to use. To use the microSD card insert it into the card
 slot.
 - Format: FAT12/16/32
 
+The mmicro sd card contents depending on your radio type, the sound
+files, lua scripts, themes and model images. Since sound files and lua
+scripts need to matched to a OpenTX version, OpenTX checks the version
+of the SD card contents and warns if the sd card files have the wrong
+version.
+
 ## Version Warning
 
 ![](companion/sdcard/versionWarning.png)
@@ -15,6 +21,8 @@ If a microSD Card is present when the Tx is turned on OpenTX check its root/top 
   ![](companion/sdcard/versionFile.png)
 
 If the incorrect version is being used then it is possible that some announcements such as telemetry units will be incorrect and other file such as lua scripts are outdated.
+
+
 
 ## SD Card contents
 
@@ -27,7 +35,8 @@ The standard SD card contents are available from within Companion.
 
   ![](companion/sdcard/dowbloadSDcontents.png)
   
-- The zip file available for download depends on the Companion radio profile being used. 
+- The zip file available for download depends on the Companion radio
+  profile being used.
 - Click on the zip file link to download the microSD card contents
 
   ![](companion/sdcard/sdZipFileLink.png)
