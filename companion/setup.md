@@ -1,25 +1,28 @@
 # Setting up OpenTX Companion
 
-The first thing is of course to download and install the appropriate
+The first thing is of course to download and install the appropriate  
 version of OpenTX Companion for your system from the OpenTX home page.
 
 Once the program is launched, you will see the main window.
 
 To open the Edit Settings window:
- * Windows -> Settings -> Settings
- * Mac -> Companion 2.2 -> Preferences
 
-![](images/companion-settings.png)
+* Windows -&gt; Settings -&gt; Settings
+* Mac -&gt; Companion 2.2 -&gt; Preferences
+
+![](/images/companion-settings.png)
 
 ## Settings menu
+
 There are three tabs:
 
 ### Radio Profile
+
 * Profile name - Name the profile for the hardware.
 * Profiles: Allows storing different setting sets and easily switching
   between them. For example, if you have 2 different radios with
   different firmwares or board types it is not convenient to have to
-  redo all settings (firmware selection, ticking options,...) every
+  redo all settings \(firmware selection, ticking options,...\) every
   time you want to do operations on the other radio. So you can
   configure all settings, choose an empty profile with the number box,
   type a name to identify the particular radio, and click save. Do the
@@ -27,8 +30,8 @@ There are three tabs:
   correct profile for the radio you are about to work on with the
   profile selector button and menu entry on OpenTX companion's main
   window. Note that the profiles can also store and retrieve each
-  radio's stick calibration and hardware settings (voltage alarms,
-  audio modes,...) from the General Settings page of an open
+  radio's stick calibration and hardware settings \(voltage alarms,
+  audio modes,...\) from the General Settings page of an open
   document. This allows copying a document from one radio to the other
   without needing recalibration or reentering the hardware settings.
 * Radio type - Choose the proper model type that you are using.
@@ -42,6 +45,7 @@ There are three tabs:
 * Offer to write FW to TX after download.
 
 ### Application settings
+
 * Google Earth Executable
 * Files to keep - number of firmware files to keep
 * Show splash screen when companion starts
@@ -54,6 +58,7 @@ There are three tabs:
 * User Splash Screens - location to store user created splash screens.  Splash screens need to be 212x64 pixels for Taranis, up to 16 grayscales.
 
 ### Simulator settings
+
 * Simulator Capture capture folder
   * Only capture to clipboard
   * Remember simulator switch values
@@ -61,17 +66,18 @@ There are three tabs:
 * Joystick
 * Simulator volume gain: volume gain for simulator
 
-
 * Joystick: This lets you configure a joystick to simulate the sticks
   in the radio simulator.
 
 ## Example configuration for a Taranis radio
-For a Taranis radio, the first thing you would do is select "OpenTX
-for FrSky Taranis" in the firmware dropdown. Select your firmware
-language, and the voice language. The top Download button will compile
-and download the latest available firmware version with the selected
-language and options. The bottom Download button will open your web
-browser on a page showing you a selection of voice packs available for
-the selected language.  Set your flight mode and preferred channel
-order in the dropdowns below, and dismiss the Preferences dialog with
+
+For a Taranis radio, the first thing you would do is select "OpenTX  
+for FrSky Taranis" in the firmware dropdown. Select your firmware  
+language, and the voice language. The top Download button will compile  
+and download the latest available firmware version with the selected  
+language and options. The bottom Download button will open your web  
+browser on a page showing you a selection of voice packs available for  
+the selected language.  Set your flight mode and preferred channel  
+order in the dropdowns below, and dismiss the Preferences dialog with  
 OK for now.
+
