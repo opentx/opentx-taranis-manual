@@ -10,10 +10,14 @@ do not hestiate to tell us.
 LView - https://github.com/RealTadango/FrSky/tree/master/LView - Lua log viewer for FrSky Horus with OpenTX
 
 ## Taranis
-LuaPilot - https://github.com/ilihack/LuaPilot_Taranis_Telemetry - Telemetry screen for Arducopter
+* [LuaPilot](https://github.com/ilihack/LuaPilot_Taranis_Telemetry) - Telemetry screen for Arducopter
 
-Open-Tm - https://github.com/resourcepool/open-tm - Telemetry screens
+* [Open-Tm](https://github.com/resourcepool/open-tm) - Telemetry screens
 mainly for models with acclerometer (includes Betaflight with telemetry)
+
+* [FPV Frequency chart](https://github.com/darsor/opentx-frequency-chart)
+
+![](images/x9-freq1.png) ![](images/x9-freq2.png)
 
 ## Sound packs
 
