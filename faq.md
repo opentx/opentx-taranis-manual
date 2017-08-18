@@ -9,8 +9,7 @@ different from other transmitters see the
 [S-PORT flashing](s-port_flashing.md) section for more details.
 
 
-## Two XJT modules, telemetry from internal and external module,
-Crossfire and internal module 
+## Two XJT modules, telemetry from internal and external module, Crossfire and internal module 
 
 This is a bit more exotic question but comes up often enough so that it needs a proper explaination why this problematic.
 
