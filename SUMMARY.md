@@ -49,4 +49,5 @@
    * [Joystick emulation](radio_joystick.md)
 
 * [SD Card contents](sdcard.md)
+* [FAQ][faq.md)
 * [Contributors](https://raw.githubusercontent.com/opentx/opentx/2.2/CREDITS.txt)
