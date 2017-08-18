@@ -50,5 +50,6 @@
 * [SD Card contents](sdcard.md)
 * [Model Setup Examples](model-setup-examples.md)
   * [Standard Four Channel](model-setup-examples/standard-four-channel.md)
+  * [Basic Elevon](model-setup-examples/basic-elevon.md)
 * [Contributors](https://raw.githubusercontent.com/opentx/opentx/2.2/CREDITS.txt)
 
