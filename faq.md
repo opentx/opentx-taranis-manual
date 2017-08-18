@@ -11,9 +11,10 @@ different from other transmitters see the
 
 ## Two XJT modules, telemetry from internal and external module, Crossfire and internal module 
 
-This is a bit more exotic question but comes up often enough so that it needs a proper explaination why this problematic.
+This is a bit more exotic question but comes up often enough so that
+it needs a proper explaination why this problematic.
 
-Smart.port for S.port for short is a bus protocol that is used for
+Smart.port (S.port for short) is a bus protocol that is used for
 connecting sensors/flight controllers to receivers. When two devices
 try to talk at the same time on the bus, the two signal interfere
 which each other and the data is lost. This problem is solved by
@@ -41,7 +42,7 @@ coming from an external XJT is though setting the DIP switches.
 
 For the R9M module, enabling/disabling telemetry can be done by
 software. OpenTX will automatically disable telemetry if internal
-module is on too, to avoid these harde to detect errors.
+module is on too, to avoid these hard to detect errors.
 
 The Crossfire module uses the sport pin not only for telemetry but
 also for input. If the internal module also sends telemetry, the
