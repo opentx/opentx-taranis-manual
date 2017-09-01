@@ -1,17 +1,43 @@
 ## Flashing your FrSky radio
 
-As mentioned before, the program of your radio can be replaced, either  
-to change the display language or to take advantage of new functions  
-or corrections.  The first thing to do is to power your radio off and  
-connect it to your computer's USB port.
+### Are Additional Drivers Required?
 
-## Installing the driver \(for Windows only\)
+Most new transmitter such as the Taranis series do not require any additional software or drivers to be installed on the computer. One exception is the FrSKY Horus X12S. The Taranis models all have a bootloader that allows flashing without additional drivers. Once flashed using the bootloader menu (described below) the bootloader is also updated and windows drivers will not be required for FrSKY transmitters except the Horus X12S.
 
-Installing the driver is only needed when you want or need to flash  
-your radio directly from the PC. The Taranis models all have a  
-bootloader that allows flashing without these drivers. For flashing a  
-Horus TX or if you need to recover your Taranis, you will need to  
-install these drivers.
+Do not install these drivers unless you are sure you need it.
+
+To check power up the transmitter in Bootloader mode:
+* Power off the transmitter
+* Pull the two horizontal trims towards the centre
+* Power on the transmitter
+* Release the trims
+* Check the bootloader version number on the top line of the LCD screen
+
+![bootloadersmall](https://user-images.githubusercontent.com/20209851/29190168-1b415e06-7de7-11e7-8d92-0010df929bbd.png)
+
+
+| Tx  | OpenTX Bootloader | PC OS | Add PC Driver |
+| --- | ------------------- | ------  | ----------------------- |
+| X7 | 2.2 | Any | No |
+| X9D | 1.x | Windows | Zadig |
+| X9D | 1.x | Linux | Dfu-util |
+| X9D | 1.x | Mac | Dfu-util |
+| X9D | 2.x | Any | No |
+| X9D+ | 2.x | Any | No |
+| X9E | 2.x | Any | No |
+| X12S | 2.2 + later | Windows | Zadig |
+| X12S | 2.2 + later| Linux | Dfu-util |
+| X12S | 2.2 + later| Mac | Dfu-util |
+
+MAC Note: Companion 2.2 for Mac comes with Dfu-util.
+
+
+## Installing The Windows Driver If Required
+
+The first thing to do is to power your radio off and connect it to your computer's USB port. 
+
+ For flashing a  
+Horus TX or if you need to recover your Taranis, you will need to install these drivers.
 
 Installing the driver is only required the first time you flash your  
 radio on a given computer. If already done this step, you can skip  
@@ -41,7 +67,7 @@ Zadig will install the driver, and should report success. When done you can dism
 Should none of these options work, you can download the driver here and install it manually \(instructions are on the download page\).  
 When the driver is properly installed, you should see this in the device manager:
 
-### Installing the flashing utility \(Linux\)
+### Installing The Linux Flashing Utility
 
 Dfu-util is avaialble in most distributions. For example in Ubuntu it can be installed by
 
@@ -49,35 +75,62 @@ Dfu-util is avaialble in most distributions. For example in Ubuntu it can be ins
 sudo apt-get install dfu-util
 ```
 
-### Setup for Mac OS X
+### Flashing Using A Mac OS
 
 Companion for Mac OS already includes the required \`\`dfu-util'' tool  
 and does not require any additional installation of tools or drivers.
 
-## Downloading and flashing the firmware
+## Downloading The OpenTX Firmware
 
-In OpenTX companion's preferences window, make sure the proper  
-firmware is selected \(OpenTX for FrSky Taranis \(X9D\), or OpenTX for  
-Taranis Plus \(X9D+\) according to the hardware you have\), and the  
-language / options match your preference, then click the top Download  
-button and select a location for the file. This will automatically  
-build and download the latest available version of OpenTX for Taranis.  
-Close the Preferences window, and select the Burn -&gt; Write Flash  
-memory command. Make sure your radio is powered off and connected.  
-Browse for the file you just downloaded. It will be recognised  
-automatically and the version will be displayed.  If you wish to  
-replace the radio's splash screen, you can either load one from a file  
-or select it from the available library, and click the "Substitute  
-image in firmware" box.  Click "Burn to TX".  Once the progress bar is  
-done and the success prompt is shown you can dismiss it and disconnect  
-your radio :\) If you get an error about the dfu-util executable not  
-being found, open the flashing tool settings with the Burn -&gt;  
-Configure menu item. Browse for the dfu-util executable, which should  
-be: On Windows: In the OpenTX companion installation folder \(by  
-default C:\Program Files\companion9x\dfu-util.exe on 32-bit systems,  
-and C:\Program Files \(x86\)\companion9x\dfu-util.exe on 64-bit  
-systems\).  On Mac OS: `/Applications/OpenTX Companion  
-2.2.app/Contents/Resources/dfu-util`
+The only recommended way to download the OpenTX firmware is using Companion. This process compiles/builds the firmware on the OpenTX servers and downloads a copy to the computer.
+
+To download the firmware follow these steps:
+
+* Radio Profile: Make sure the correct transmitter profile is selected
+* Build Options: Make sure the build options selected are the ones you want
+* Download Firmware: File -> Download
+* Click on Download firmware (The download could take a few minutes)
+* Save the firmware .bin file on the computer
+* You may be prompted to write the firmware to the transmitter
+* If you want to choose yes connect the transmitter to the computer in bootloader mode
+* Click on Yes
+* Select Check Hardware compatibility to make sure the firmware being written to the transmitter is for that particular hardware.
+* Click on Write to TX
+* Eject the mounted drives
+* Disconnect the USB cable
+* Power the transmitter off
+
+# Writing The OpenTX Firmware
+
+Connect the transmitter to the computer in bootloader mode.
+
+There are two options to write the firmware:
+* Using The Bootloader Menu
+* Using Companion
+
+## Using The Bootloader Menu
+
+* Place a copy of the firmware on the sd card in the FIRMWARE folder
+* Rename the firmware file so that the filename including the .bin extension is 35 characters or less.
+* Eject the two mounted drives
+* Disconnect the USB cable
+* Choose Write Firmware from the bootloader menu
+* Select the firmware to be written
+* Press ENT
+* Hold ENT down to start writing the firmware
+* When the “Writing Complete” message is displayed press EXIT
+* Power the transmitter off
+
+## Using Companion
+
+* Read/Write -> Write Firmware to Radio
+* A Flash Firmware window appears
+* Click on Load and select the firmware file downloaded using companion
+* Select Check Hardware compatibility to make sure the firmware being written to the transmitter is the correct one
+* Click on Write to TX
+* Eject the two mounted drives
+* Disconnect the USB cable
+* Power off the transmitter
 
 ## Downloading and installing SD card content.
 
