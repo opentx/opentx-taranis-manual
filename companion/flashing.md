@@ -2,11 +2,11 @@
 
 ### Are Additional Drivers Required?
 
-Most new transmitter such as the Taranis series do not require any additional software or drivers to be installed on the computer. One exception is the FrSKY Horus X12S. The Taranis models all have a bootloader that allows flashing without additional drivers. Once flashed using the bootloader menu (described below) the bootloader is also updated and windows drivers will not be required for FrSKY transmitters except the Horus X12S.
+Most new transmitter such as the Taranis series do not require any additional drivers to be installed on the computer to use it with Companion for configuration and model editing. Flashing the remotes via PC (with dfu-util) needs drivers installed but this can be avoided by flashing with the bootloader. The exception is the FrSKY Horus X12S that, unlike the Taranis model, does not have a bootloader that allows flashing without additional drivers. Once flashed using the bootloader menu (described below) the bootloader is also updated and windows drivers will not be required for FrSKY transmitters except the Horus X12S.
 
-Do not install these drivers unless you are sure you need it.
+You do not need install these drivers unless you are sure you need it.
 
-To check power up the transmitter in Bootloader mode:
+To power up the transmitter in Bootloader mode:
 * Power off the transmitter
 * Pull the two horizontal trims towards the centre
 * Power on the transmitter
@@ -16,23 +16,19 @@ To check power up the transmitter in Bootloader mode:
 ![bootloadersmall](https://user-images.githubusercontent.com/20209851/29190168-1b415e06-7de7-11e7-8d92-0010df929bbd.png)
 
 
-| Tx  | OpenTX Bootloader | PC OS | Add PC Driver |
+| Tx  | OpenTX Bootloader | Flash method |
 | --- | ------------------- | ------  | ----------------------- |
-| X7 | 2.2 | Any | No |
-| X9D | 1.x | Windows | Zadig |
-| X9D | 1.x | Linux | Dfu-util |
-| X9D | 1.x | Mac | Dfu-util |
-| X9D | 2.x | Any | No |
-| X9D+ | 2.x | Any | No |
-| X9E | 2.x | Any | No |
-| X12S | 2.2 + later | Windows | Zadig |
-| X12S | 2.2 + later| Linux | Dfu-util |
-| X12S | 2.2 + later| Mac | Dfu-util |
+| X7 | 2.2 |  Bootloader, Dfu-util |
+| X9D | 1.x | Dfu-util |
+| X9D | 2.x |  Bootloader, Dfu-util |
+| X9D+ | 2.x | Any |  Bootloader, Dfu-util |
+| X9E | 2.x | Any |  Bootloader, Dfu-util |
+| X12S | 2.2 + later | Windows | Dfu-util |
 
-MAC Note: Companion 2.2 for Mac comes with Dfu-util.
+Companion 2.2 for Mac and Windows comes with Dfu-util. Linux distribution usuall have a package for dfu-util. Windows needs drivers installed via Zadiag utility
 
 
-## Installing The Windows Driver If Required
+## Installing The Windows Driver with Zadiag (optional)
 
 The first thing to do is to power your radio off and connect it to your computer's USB port. 
 
@@ -121,7 +117,7 @@ There are two options to write the firmware:
 * When the “Writing Complete” message is displayed press EXIT
 * Power the transmitter off
 
-## Using Companion
+## Using Companion (dfu-util)
 
 * Read/Write -> Write Firmware to Radio
 * A Flash Firmware window appears
