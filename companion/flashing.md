@@ -17,13 +17,13 @@ To power up the transmitter in Bootloader mode:
 
 
 | Tx  | OpenTX Bootloader | Flash method |
-| --- | ------------------- | ------  | ----------------------- |
+| --- | ------------------- | ------  | 
 | X7 | 2.2 |  Bootloader, Dfu-util |
 | X9D | 1.x | Dfu-util |
 | X9D | 2.x |  Bootloader, Dfu-util |
 | X9D+ | 2.x | Any |  Bootloader, Dfu-util |
 | X9E | 2.x | Any |  Bootloader, Dfu-util |
-| X12S | 2.2 + later | Windows | Dfu-util |
+| X12S | 2.2 + later |  Dfu-util |
 
 Companion 2.2 for Mac and Windows comes with Dfu-util. Linux distribution usuall have a package for dfu-util. Windows needs drivers installed via Zadiag utility
 
