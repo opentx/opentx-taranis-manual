@@ -119,6 +119,13 @@ There are two options to write the firmware:
 
 ## Using Companion (dfu-util)
 
+If you get an error about the dfu-util executable not  
+ being found, open the flashing tool settings menu item. Browse for the dfu-util executable, which should be: On Windows: In the OpenTX companion installation folder \(by  default\)
+ `C:\Program Files\OpenTX Companion 2.2\dfu-util.exe` on 32-bit systems,  
+ and  `C:\Program Files\OpenTX Companion 2.2\dfu-util.exe` on 64-bit  
+ systems.  On Mac OS: `/Applications/OpenTX Companion 2.2.app/Contents/Resources/dfu-util`
+
+
 * Read/Write -> Write Firmware to Radio
 * A Flash Firmware window appears
 * Click on Load and select the firmware file downloaded using companion
