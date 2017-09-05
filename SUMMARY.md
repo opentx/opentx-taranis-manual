@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [The radio](the-radio.md)
-* [Build Option](radio_options.md)
+* [Build Options](radio_options.md)
 
 ---
 
@@ -52,6 +52,6 @@
   * [Standard Four Channel](model-setup-examples/standard-four-channel.md)
   * [Basic Elevon](model-setup-examples/basic-elevon.md)
   * [Flaps - One Servo](model-setup-examples/plane-with-flaps.md)
-* \[FAQ\]\[faq.md\)
+* [FAQ](faq.md)
 * [Contributors](https://raw.githubusercontent.com/opentx/opentx/2.2/CREDITS.txt)
 

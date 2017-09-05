@@ -1,5 +1,5 @@
 # The firmware compilation options are
-This page list the different options that are availabe for the (different radios)[http://www.open-tx.org/radios]
+This page list the different options that are availabe for the [different radios](http://www.open-tx.org/radios)
 
 ## All radios
 
