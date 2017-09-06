@@ -27,4 +27,4 @@ Beware that these sound packs might not be update with SD card conents and might
 [Joanne Soundpack on RCGroups](https://www.rcgroups.com/forums/showthread.php?2888433-OpenTX-Soundpack-Joanne) 
 
 Amber Sound pack - [https://www.dropbox.com/s/3t7p9t6ykufhsfx/Amber22.rar?dl=0](Download only)
-
+["Mia" Taranis Voicepack](https://miawinther.bandcamp.com/album/mia-taranis-voicepack) (commercial - 5 USD)
