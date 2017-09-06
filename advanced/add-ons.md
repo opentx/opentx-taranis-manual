@@ -24,7 +24,8 @@ mainly for models with acclerometer (includes Betaflight with telemetry)
 Beware that these sound packs might not be update with SD card conents and might be missing some sound files from newer releases.
 
 ### English
-[Joanne Soundpack on RCGroups](https://www.rcgroups.com/forums/showthread.php?2888433-OpenTX-Soundpack-Joanne) 
+* [Joanne Soundpack on RCGroups](https://www.rcgroups.com/forums/showthread.php?2888433-OpenTX-Soundpack-Joanne) 
 
-Amber Sound pack - [https://www.dropbox.com/s/3t7p9t6ykufhsfx/Amber22.rar?dl=0](Download only)
-["Mia" Taranis Voicepack](https://miawinther.bandcamp.com/album/mia-taranis-voicepack) (commercial - 5 USD)
+* Amber Sound pack - [https://www.dropbox.com/s/3t7p9t6ykufhsfx/Amber22.rar?dl=0](Download only)
+
+* ["Mia" Taranis Voicepack](https://miawinther.bandcamp.com/album/mia-taranis-voicepack) (commercial - 5 USD)
