@@ -8,6 +8,20 @@ Connecting and flashing receivers with newer Q X7 models is a bit
 different from other transmitters see the
 [S-PORT flashing](s-port_flashing.md) section for more details.
 
+## Voltage on Frsky Radios external module output
+
+Note that the voltage on the external RF module PPM output pin is
+driven by the battery voltage on the FrSky radios. Especially for
+SBUS, which is normally 3.3V, this is too high. However, the output is
+current limited by a 10 kΩ resistor, which limits the current to
+around 1mA. The input protection diodes of FC processors should be
+handle the higher voltage at such a low current and connecting the
+output directly to a flight controller should be relatively safe. But
+it is still outside the specification and you are doing that on your
+risk. If you want to be really safe use a voltage divider or a level
+shifter.
+      
+
 
 ## Two XJT modules, telemetry from internal and external module, Crossfire and internal module 
 
