@@ -23,22 +23,19 @@ For example, if you only want the aileron to travel a maximum of 50% and have th
 
 There is no way to assign a switch to to this setting, however, and the limits will apply to all flight modes.
 
-A good example for when you would use this method is that even though an elevator could physically travel a full inch, doing that would make the plane behave badly and out of control.  Setting output limits would reduce the possibility of the elavator traveling too far no matter what you put into the Inputs or Mixer screens.
+A good example for when you would use this method is that even though an elevator could physically travel a full inch, doing that may make the plane behave badly and out of control.  
 
+Setting Outputs limits would reduce the possibility of the elavator traveling too far no matter what you put into the Inputs or Mixer screens.  
 
+Additionally, It is considered good pratice to set the physical limits using Outputs as it reduces the chance of accidently damaging the model while setting up Inputs and Mixers .
 
 ## Using a Curve in the Inputs/Mixer screen
 
 You can achieve the same results as above by setting up a linear "curve" that looks like this:
 
-![](/assets/linear-50.png) 
-
+![](/assets/linear-50.png)
 
 Both of the above setups will produce something that will look something like this:
 
- ![](/assets/Ele-far-right.png)  ![](/assets/CM-Ail-50.png) 
-
- 
-
-
+![](/assets/Ele-far-right.png)  ![](/assets/CM-Ail-50.png)
 
