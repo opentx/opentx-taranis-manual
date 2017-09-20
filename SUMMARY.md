@@ -47,6 +47,7 @@
   * [S-PORT flashing](s-port_flashing.md)
   * [Build Option](radio_options.md)
   * [Joystick emulation](radio_joystick.md)
+  * [Managing Throws](advanced/managing-throws.md)
 * [SD Card contents](sdcard.md)
 * [Model Setup Examples](model-setup-examples.md)
   * [Standard Four Channel](model-setup-examples/standard-four-channel.md)
