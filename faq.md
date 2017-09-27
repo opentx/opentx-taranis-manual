@@ -2,6 +2,34 @@
 
 This section explains some questions that come up over and over again.
 
+## USB-C port on the Frsky X10 and X10s
+
+__The USB-C port on the X10/X10s has serious design flaw. Do not use
+it for anything other than charging with the supplied charger__
+
+USB-C has been designed to make it safe to plug arbitrary devices
+together without fear to damage any device this way. This done by
+mainly two main things that devices with an USB-C port *must* comply
+with. Firstly, never switch on power unless being signalled to do so
+and second *never* output anything other than 5V unless the devices
+agree with the USB-PD protocol and only by use of the USB-PD protocol
+to a different voltage. The signalling of allowing 5V output can also
+be by use of a legacy cable (e.g. USB-C to micro USB or USB-C to USB-C
+socket adapter).
+
+The FrSky X10 abuses the USB-C as connector for their charger. It
+violates the both of the USB-C safeguards. Instead of presenting only
+5V when signalled to do so, the USB-C connector on the X10/X10s
+directly connects to the battery and outputs battery voltage (up to
+8.4V) regardles of what the other device is. As almost all USB devices
+are only specified and tested for 5V, connecting the X10/X10s to any
+USB devices (via USB-C to USB-C or USB-C to USB-A cable) has a good
+chance to permanently damage the other device.  The USB-C port also
+has no USB functionality.
+
+The (less common) mini USB connector on the X10 is fine and is the
+only USB can and should be used to the X10 connect to a PC.
+
 ## Flashing receivers does not work with the Taranis Q X7
 
 Connecting and flashing receivers with newer Q X7 models is a bit
