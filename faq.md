@@ -21,7 +21,7 @@ The FrSky X10 the USB-C is abused as connector for the Lipo
 charger. It violates the both of the USB-C safeguards. Instead of
 presenting only 5V when signalled to do so, the USB-C connector on the
 X10/X10s directly connects to the battery and outputs battery voltage
-(up to 8.4V for the default 2S Lipo) regardles of what the other
+(up to 8.4V for the default 2S Lipo) regardless of what the other
 device is. As almost all USB devices are only specified and tested for
 5V, connecting the X10/X10s to any other USB devices (via USB-C to
 USB-C or USB-C to USB-A cable) has a good chance to permanently damage
@@ -54,7 +54,7 @@ shifter.
 ## Two XJT modules, telemetry from internal and external module, Crossfire and internal module 
 
 This is a bit more exotic question but comes up often enough so that
-it needs a proper explaination why this problematic.
+it needs a proper explanation why this problematic.
 
 Smart.port (S.port for short) is a bus protocol that is used for
 connecting sensors/flight controllers to receivers. When two devices
@@ -65,7 +65,7 @@ will periodically ask each sensor to send new data and when the sensor
 has its chance to send data no other sensor is allowed to talk.
 
 On the Frsky radios the S.port pin between the internal and external
-module is shared, they are electrally conncted. Unlike the receiver
+module is shared, they are electrically connected. Unlike the receiver
 and its sensors there is no coordination between the two modules. That
 means if both modules send telemetry at the same time, neither gets
 through.
@@ -79,7 +79,7 @@ everything is okay.
 
 Even binding a receiver without telemetry is not enough to stop a XJT
 module from sending telemetry, as there some module status messages
-that are contantly sent. The only way to ensure that no telemetry is
+that are constantly sent. The only way to ensure that no telemetry is
 coming from an external XJT is though setting the DIP switches.
 
 For the R9M module, enabling/disabling telemetry can be done by
@@ -90,3 +90,5 @@ The Crossfire module uses the sport pin not only for telemetry but
 also for input. If the internal module also sends telemetry, the
 communication to the Crossfire module is problematic.
 
+OpenTX 2.2.1 and later allows you to see the telemetry receive error
+statistics under the statistics view (where also other debug information are presented).
