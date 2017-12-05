@@ -8,7 +8,7 @@ A good example of this is an aircraft known asa "flying wing".
 
 ![](/assets/flying-wing.jpg)
 
-As you can see from the picture above, the airleron and elevator surfaces reside in the same physical control surface.
+As you can see from the picture above, the aileron and elevator surfaces reside in the same physical control surface.
 
 For this to work, you have to create a "mix" because this plane has only one servo connected to the Aileron aileron port of the reciever \(Channel 1\), and one servo connected to the Elevator port of the receiver \(Channel 2\).
 
