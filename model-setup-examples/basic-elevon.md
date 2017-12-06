@@ -4,7 +4,7 @@ Elevons are control surfaces that combine the functions of the elevator and the 
 
 You usually see this sort of configuration on tailless aircraft.
 
-A good example of this is an aircraft known asa "flying wing".
+A good example of this is an aircraft known as a "flying wing".
 
 ![](/assets/flying-wing.jpg)
 
@@ -12,7 +12,7 @@ As you can see from the picture above, the airleron and elevator surfaces reside
 
 For this to work, you have to create a "mix" because this plane has only one servo connected to the Aileron aileron port of the reciever \(Channel 1\), and one servo connected to the Elevator port of the receiver \(Channel 2\).
 
-Throttle is assigned to Channel 3 and Rudder is assigned to channel 4.   
+Throttle is assigned to Channel 3 and Rudder is assigned to channel 4.
 
 Channel 4 is unused in this setup, but was inserted because we started with a default model setup.  Removing the Rudder Input \(on [Inputs](/inputs.md) page\) and Channel 4 \(on [Mixer](/mixer.md) page\) would not have any impact on the control surfaces.
 
