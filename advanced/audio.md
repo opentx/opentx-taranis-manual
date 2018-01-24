@@ -108,12 +108,17 @@ To play sounds specific to a model without configuring them as a Special Functio
     - E.g. /SOUNDS/en/my_model/
 
 The file names use the following format:
-- Switches & Logical Switches
+- Switches
   - switchID-position.wav
-    - SA-up.wav, L1-up.wav \(true\)
+    - SA-up.wav
     - SA-mid.wav \(if position present\)
-    - SA-down.wav, L1-down.wav \(false\)
+    - SA-down.wav
     - Note: There is no equivalent for SA not up.
+- Logical Switches
+  - switchID-condition.wav
+    - L1-up.wav \(true\)
+    - L1-down.wav \(false\)
+    - Note: There is no equivalent for L1 not up.
 - Multiple Position Switches / Stepped Potentiometers
   - P-switchNumber-position.wav
     - P11.wav
