@@ -36,7 +36,7 @@ There are three tabs:
   without needing recalibration or reentering the hardware settings.
 * Radio type - Choose the proper model type that you are using.
 * Menu Language - Language you want the menu for the radio to display in.
-* Build Options - See [Build Options](radio_options.md) for details on the different build options
+* Build Options - See [Build Options](../radio_options.md) for details on the different build options
 * Splash screen: selected splash screen.
 * SD structure path: For radios with SD cards, Taranis and sky9x board, this lets you choose a folder on your hard drive where you have made a copy of what is on the SD card of the radio.  This allows OpenTX companion to populate the model image selector with the images that are on the card, and do the same for audio files.
 * Backup Folder: Location of backup eproms
