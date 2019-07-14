@@ -13,7 +13,7 @@ Sounds & Announcements take place in response to
 
 
 ## SD Card contents
-SD Card contents can be downloaded as described in [Companion Sdcard](sdcard.md)
+SD Card contents can be downloaded as described in [Companion Sdcard](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/sdcard.html)
 
 ### Announcement To File Mapping / Definitions
 

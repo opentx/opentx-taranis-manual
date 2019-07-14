@@ -84,5 +84,5 @@ systems\).  On Mac OS: `/Applications/OpenTX Companion
 Once you have installed the firmware you will also need to install the  
 sd card content \(unless you do not use a sd card\).
 
-See the [Sdcard](sdcard.md) for more details.
+See the [Sdcard](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/sdcard.html) for more details.
 
